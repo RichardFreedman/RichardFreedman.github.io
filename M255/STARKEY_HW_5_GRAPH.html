@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 500px;
+            height: 500px;
+            background-color: black;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"font": {"color": "white"}, "id": "hamdard_for_bob_dylan", "label": "hamdard_for_bob_dylan", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "mccombs_my_room", "label": "mccombs_my_room", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "kogawara_summer_teen", "label": "kogawara_summer_teen", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "helmreich_stuffed_raccoon_melancholia", "label": "helmreich_stuffed_raccoon_melancholia", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "mccombs_cant_take_eyes_covers", "label": "mccombs_cant_take_eyes_covers", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "lachman_drummer_study_mix", "label": "lachman_drummer_study_mix", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "jain_dog_on_the_move", "label": "jain_dog_on_the_move", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "mccombs_headphone_girl", "label": "mccombs_headphone_girl", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "kohn_such_great_heights_covers", "label": "kohn_such_great_heights_covers", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "shigeno_classic_roadtrip", "label": "shigeno_classic_roadtrip", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "keim_covers", "label": "keim_covers", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "sarma_frodo_journey_to_mordor", "label": "sarma_frodo_journey_to_mordor", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "mccombs_person_fall_in_love", "label": "mccombs_person_fall_in_love", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "keim_stuck_in_90s", "label": "keim_stuck_in_90s", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "kogawara_interns_commute", "label": "kogawara_interns_commute", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "lachman_run_walk", "label": "lachman_run_walk", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "hamdard_beatles_covers", "label": "hamdard_beatles_covers", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "starkey_teen_spirit_covers", "label": "starkey_teen_spirit_covers", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "kogawara_let_it_snow_covers", "label": "kogawara_let_it_snow_covers", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "cross_encoding_music_student_working", "label": "cross_encoding_music_student_working", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "lachman_sunshine_my_life_covers", "label": "lachman_sunshine_my_life_covers", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "cross_la_vie_en_rose_covers", "label": "cross_la_vie_en_rose_covers", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "kohn_a_good_cry", "label": "kohn_a_good_cry", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "keim_headphone_solo", "label": "keim_headphone_solo", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "sarma_beatles_and_simon_covers", "label": "sarma_beatles_and_simon_covers", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "jain_romantic_comedy", "label": "jain_romantic_comedy", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "cross_fantasy_novel_fan", "label": "cross_fantasy_novel_fan", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "tan_chopin_ballade_renditions", "label": "tan_chopin_ballade_renditions", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "jain_blackbird_autumn_rain_covers", "label": "jain_blackbird_autumn_rain_covers", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "tan_chem_first_year_homework", "label": "tan_chem_first_year_homework", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "starkey_jazz_fan_in_motion", "label": "starkey_jazz_fan_in_motion", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "sarma_dads_south_asian_trip", "label": "sarma_dads_south_asian_trip", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "tan_haverford_gym_rat", "label": "tan_haverford_gym_rat", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "helmreich_stuffed_sloth_clubbing", "label": "helmreich_stuffed_sloth_clubbing", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "helmreich_stones_satisfaction_covers", "label": "helmreich_stones_satisfaction_covers", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "hamdard_for_keith_richards", "label": "hamdard_for_keith_richards", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "kogawara_barista_at_work", "label": "kogawara_barista_at_work", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "starkey_discordant_electronica", "label": "starkey_discordant_electronica", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "kohn_headbangers_rage", "label": "kohn_headbangers_rage", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "shigeno_film_scores_at_work", "label": "shigeno_film_scores_at_work", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "shigeno_grieg_mountain_king_renditions", "label": "shigeno_grieg_mountain_king_renditions", "shape": "dot", "size": 10}, {"font": {"color": "white"}, "id": "hamdard_and_i_love_her_covers", "label": "hamdard_and_i_love_her_covers", "shape": "dot", "size": 10}]);
+        edges = new vis.DataSet([{"from": "hamdard_for_bob_dylan", "to": "mccombs_my_room", "weight": 1}, {"from": "hamdard_for_bob_dylan", "to": "kogawara_summer_teen", "weight": 1}, {"from": "hamdard_for_bob_dylan", "to": "helmreich_stuffed_raccoon_melancholia", "weight": 1}, {"from": "hamdard_for_bob_dylan", "to": "mccombs_cant_take_eyes_covers", "weight": 1}, {"from": "hamdard_for_bob_dylan", "to": "lachman_drummer_study_mix", "weight": 1}, {"from": "hamdard_for_bob_dylan", "to": "jain_dog_on_the_move", "weight": 1}, {"from": "mccombs_headphone_girl", "to": "kohn_such_great_heights_covers", "weight": 1}, {"from": "mccombs_headphone_girl", "to": "shigeno_classic_roadtrip", "weight": 1}, {"from": "mccombs_headphone_girl", "to": "helmreich_stuffed_raccoon_melancholia", "weight": 1}, {"from": "mccombs_headphone_girl", "to": "keim_covers", "weight": 1}, {"from": "mccombs_headphone_girl", "to": "sarma_frodo_journey_to_mordor", "weight": 1}, {"from": "mccombs_person_fall_in_love", "to": "kohn_such_great_heights_covers", "weight": 1}, {"from": "mccombs_person_fall_in_love", "to": "helmreich_stuffed_raccoon_melancholia", "weight": 1}, {"from": "mccombs_my_room", "to": "kogawara_summer_teen", "weight": 1}, {"from": "mccombs_my_room", "to": "mccombs_cant_take_eyes_covers", "weight": 1}, {"from": "mccombs_my_room", "to": "keim_stuck_in_90s", "weight": 1}, {"from": "mccombs_my_room", "to": "jain_dog_on_the_move", "weight": 1}, {"from": "kogawara_interns_commute", "to": "kogawara_summer_teen", "weight": 1}, {"from": "kogawara_interns_commute", "to": "mccombs_cant_take_eyes_covers", "weight": 1}, {"from": "kogawara_interns_commute", "to": "lachman_drummer_study_mix", "weight": 1}, {"from": "kogawara_interns_commute", "to": "lachman_run_walk", "weight": 1}, {"from": "kogawara_interns_commute", "to": "jain_dog_on_the_move", "weight": 1}, {"from": "kogawara_summer_teen", "to": "mccombs_cant_take_eyes_covers", "weight": 1}, {"from": "kogawara_summer_teen", "to": "jain_dog_on_the_move", "weight": 1}, {"from": "hamdard_beatles_covers", "to": "starkey_teen_spirit_covers", "weight": 1}, {"from": "hamdard_beatles_covers", "to": "helmreich_stuffed_raccoon_melancholia", "weight": 1}, {"from": "kogawara_let_it_snow_covers", "to": "cross_encoding_music_student_working", "weight": 1}, {"from": "kogawara_let_it_snow_covers", "to": "shigeno_classic_roadtrip", "weight": 1}, {"from": "kogawara_let_it_snow_covers", "to": "lachman_sunshine_my_life_covers", "weight": 1}, {"from": "cross_encoding_music_student_working", "to": "cross_la_vie_en_rose_covers", "weight": 1}, {"from": "cross_encoding_music_student_working", "to": "kohn_a_good_cry", "weight": 1}, {"from": "cross_encoding_music_student_working", "to": "keim_covers", "weight": 1}, {"from": "cross_encoding_music_student_working", "to": "keim_headphone_solo", "weight": 1}, {"from": "cross_encoding_music_student_working", "to": "sarma_beatles_and_simon_covers", "weight": 1}, {"from": "cross_encoding_music_student_working", "to": "jain_romantic_comedy", "weight": 1}, {"from": "cross_fantasy_novel_fan", "to": "tan_chopin_ballade_renditions", "weight": 1}, {"from": "cross_la_vie_en_rose_covers", "to": "jain_blackbird_autumn_rain_covers", "weight": 1}, {"from": "tan_chem_first_year_homework", "to": "starkey_teen_spirit_covers", "weight": 1}, {"from": "tan_chem_first_year_homework", "to": "kohn_such_great_heights_covers", "weight": 1}, {"from": "tan_chem_first_year_homework", "to": "shigeno_classic_roadtrip", "weight": 1}, {"from": "tan_chem_first_year_homework", "to": "helmreich_stuffed_raccoon_melancholia", "weight": 1}, {"from": "tan_chem_first_year_homework", "to": "sarma_frodo_journey_to_mordor", "weight": 1}, {"from": "starkey_jazz_fan_in_motion", "to": "starkey_teen_spirit_covers", "weight": 1}, {"from": "starkey_teen_spirit_covers", "to": "sarma_dads_south_asian_trip", "weight": 1}, {"from": "kohn_a_good_cry", "to": "keim_headphone_solo", "weight": 1}, {"from": "kohn_a_good_cry", "to": "sarma_beatles_and_simon_covers", "weight": 1}, {"from": "kohn_a_good_cry", "to": "jain_blackbird_autumn_rain_covers", "weight": 1}, {"from": "kohn_a_good_cry", "to": "jain_romantic_comedy", "weight": 1}, {"from": "kohn_such_great_heights_covers", "to": "shigeno_classic_roadtrip", "weight": 1}, {"from": "kohn_such_great_heights_covers", "to": "helmreich_stuffed_raccoon_melancholia", "weight": 1}, {"from": "kohn_such_great_heights_covers", "to": "sarma_frodo_journey_to_mordor", "weight": 1}, {"from": "tan_haverford_gym_rat", "to": "helmreich_stuffed_sloth_clubbing", "weight": 1}, {"from": "tan_haverford_gym_rat", "to": "keim_stuck_in_90s", "weight": 1}, {"from": "shigeno_classic_roadtrip", "to": "helmreich_stuffed_raccoon_melancholia", "weight": 1}, {"from": "shigeno_classic_roadtrip", "to": "keim_covers", "weight": 1}, {"from": "shigeno_classic_roadtrip", "to": "sarma_frodo_journey_to_mordor", "weight": 1}, {"from": "helmreich_stuffed_raccoon_melancholia", "to": "sarma_frodo_journey_to_mordor", "weight": 1}, {"from": "helmreich_stuffed_sloth_clubbing", "to": "mccombs_cant_take_eyes_covers", "weight": 1}, {"from": "helmreich_stuffed_sloth_clubbing", "to": "lachman_drummer_study_mix", "weight": 1}, {"from": "helmreich_stuffed_sloth_clubbing", "to": "lachman_run_walk", "weight": 1}, {"from": "helmreich_stuffed_sloth_clubbing", "to": "jain_dog_on_the_move", "weight": 1}, {"from": "helmreich_stones_satisfaction_covers", "to": "mccombs_cant_take_eyes_covers", "weight": 1}, {"from": "helmreich_stones_satisfaction_covers", "to": "lachman_run_walk", "weight": 1}, {"from": "mccombs_cant_take_eyes_covers", "to": "keim_stuck_in_90s", "weight": 1}, {"from": "mccombs_cant_take_eyes_covers", "to": "lachman_drummer_study_mix", "weight": 1}, {"from": "mccombs_cant_take_eyes_covers", "to": "lachman_run_walk", "weight": 1}, {"from": "mccombs_cant_take_eyes_covers", "to": "jain_dog_on_the_move", "weight": 1}, {"from": "keim_covers", "to": "sarma_frodo_journey_to_mordor", "weight": 1}, {"from": "keim_covers", "to": "sarma_beatles_and_simon_covers", "weight": 1}, {"from": "keim_covers", "to": "jain_romantic_comedy", "weight": 1}, {"from": "keim_headphone_solo", "to": "sarma_beatles_and_simon_covers", "weight": 1}, {"from": "keim_stuck_in_90s", "to": "lachman_drummer_study_mix", "weight": 1}, {"from": "keim_stuck_in_90s", "to": "jain_dog_on_the_move", "weight": 1}, {"from": "lachman_drummer_study_mix", "to": "lachman_run_walk", "weight": 1}, {"from": "lachman_drummer_study_mix", "to": "jain_dog_on_the_move", "weight": 1}, {"from": "lachman_run_walk", "to": "jain_dog_on_the_move", "weight": 1}, {"from": "sarma_frodo_journey_to_mordor", "to": "sarma_beatles_and_simon_covers", "weight": 1}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {"physics": {"enabled": true, "forceAtlas2Based": {"springLength": 1}, "solver": "forceAtlas2Based"}};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

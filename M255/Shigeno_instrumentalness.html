@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 500px;
+            height: 500px;
+            background-color: black;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"font": {"color": "white"}, "group": 0, "id": "Jack Sparrow_Hans Zimmer", "label": "Jack Sparrow_Hans Zimmer", "shape": "dot", "size": 10, "title": "instrumentalness: 0.824"}, {"font": {"color": "white"}, "group": 0, "id": "The End?_Hans Zimmer", "label": "The End?_Hans Zimmer", "shape": "dot", "size": 10, "title": "instrumentalness: 0.874"}, {"font": {"color": "white"}, "group": 0, "id": "Oogway\u0027s Legacy_Hans Zimmer", "label": "Oogway\u0027s Legacy_Hans Zimmer", "shape": "dot", "size": 10, "title": "instrumentalness: 0.825"}, {"font": {"color": "white"}, "group": 0, "id": "Main Title_Danny Elfman", "label": "Main Title_Danny Elfman", "shape": "dot", "size": 10, "title": "instrumentalness: 0.943"}, {"font": {"color": "white"}, "group": 0, "id": "Star Trek Main Theme_Michael Giacchino", "label": "Star Trek Main Theme_Michael Giacchino", "shape": "dot", "size": 10, "title": "instrumentalness: 0.952"}, {"font": {"color": "white"}, "group": 1, "id": "Incredits 2_Michael Giacchino", "label": "Incredits 2_Michael Giacchino", "shape": "dot", "size": 10, "title": "instrumentalness: 0.13"}, {"font": {"color": "white"}, "group": 2, "id": "Just the Two of Us (feat. Bill Withers)_Grover Washington, Jr.", "label": "Just the Two of Us (feat. Bill Withers)_Grover Washington, Jr.", "shape": "dot", "size": 10, "title": "instrumentalness: 0.0499"}, {"font": {"color": "white"}, "group": 1, "id": "Windy_The Association", "label": "Windy_The Association", "shape": "dot", "size": 10, "title": "instrumentalness: 0.148"}, {"font": {"color": "white"}, "group": 0, "id": "Cornfield Chase_Hans Zimmer", "label": "Cornfield Chase_Hans Zimmer", "shape": "dot", "size": 10, "title": "instrumentalness: 0.982"}, {"font": {"color": "white"}, "group": 3, "id": "The James Bond Theme (Original)_The City of Prague Philharmonic Orchestra", "label": "The James Bond Theme (Original)_The City of Prague Philharmonic Orchestra", "shape": "dot", "size": 10, "title": "instrumentalness: 0.695"}, {"font": {"color": "white"}, "group": 3, "id": "Merry-Go-Round of Life - from \u0027Howl\u0027s Moving Castle\u0027_Joe Hisaishi", "label": "Merry-Go-Round of Life - from \u0027Howl\u0027s Moving Castle\u0027_Joe Hisaishi", "shape": "dot", "size": 10, "title": "instrumentalness: 0.644"}, {"font": {"color": "white"}, "group": 2, "id": "The Hanging Tree_James Newton Howard", "label": "The Hanging Tree_James Newton Howard", "shape": "dot", "size": 10, "title": "instrumentalness: 3.45e-05"}, {"font": {"color": "white"}, "group": 2, "id": "Sweet Caroline_Neil Diamond", "label": "Sweet Caroline_Neil Diamond", "shape": "dot", "size": 10, "title": "instrumentalness: 0.000133"}, {"font": {"color": "white"}, "group": 2, "id": "Sons \u0026 Daughters_The Decemberists", "label": "Sons \u0026 Daughters_The Decemberists", "shape": "dot", "size": 10, "title": "instrumentalness: 0.0"}, {"font": {"color": "white"}, "group": 2, "id": "Both Sides Now_Judy Collins", "label": "Both Sides Now_Judy Collins", "shape": "dot", "size": 10, "title": "instrumentalness: 0.0"}, {"font": {"color": "white"}, "group": 2, "id": "Stressed Out_Twenty One Pilots", "label": "Stressed Out_Twenty One Pilots", "shape": "dot", "size": 10, "title": "instrumentalness: 2.29e-05"}, {"font": {"color": "white"}, "group": 2, "id": "Harmony Hall_Vampire Weekend", "label": "Harmony Hall_Vampire Weekend", "shape": "dot", "size": 10, "title": "instrumentalness: 0.000129"}, {"font": {"color": "white"}, "group": 2, "id": "Goodbye Yellow Brick Road - Remastered 2014_Elton John", "label": "Goodbye Yellow Brick Road - Remastered 2014_Elton John", "shape": "dot", "size": 10, "title": "instrumentalness: 0.00141"}, {"font": {"color": "white"}, "group": 2, "id": "Vienna_Billy Joel", "label": "Vienna_Billy Joel", "shape": "dot", "size": 10, "title": "instrumentalness: 0.0"}, {"font": {"color": "white"}, "group": 2, "id": "Run Away to Mars_TALK", "label": "Run Away to Mars_TALK", "shape": "dot", "size": 10, "title": "instrumentalness: 0.0"}]);
+        edges = new vis.DataSet([{"from": "Jack Sparrow_Hans Zimmer", "to": "The End?_Hans Zimmer", "weight": 2.4515800203873575}, {"from": "Jack Sparrow_Hans Zimmer", "to": "Oogway\u0027s Legacy_Hans Zimmer", "weight": 4.949031600407747}, {"from": "The End?_Hans Zimmer", "to": "Main Title_Danny Elfman", "weight": 1.4831804281345589}, {"from": "The End?_Hans Zimmer", "to": "Oogway\u0027s Legacy_Hans Zimmer", "weight": 2.50254841997961}, {"from": "The End?_Hans Zimmer", "to": "Star Trek Main Theme_Michael Giacchino", "weight": 1.0244648318042833}, {"from": "Incredits 2_Michael Giacchino", "to": "Just the Two of Us (feat. Bill Withers)_Grover Washington, Jr.", "weight": 0.91743119266055}, {"from": "Incredits 2_Michael Giacchino", "to": "Windy_The Association", "weight": 4.08256880733945}, {"from": "Main Title_Danny Elfman", "to": "Cornfield Chase_Hans Zimmer", "weight": 3.0122324159021385}, {"from": "Main Title_Danny Elfman", "to": "Star Trek Main Theme_Michael Giacchino", "weight": 4.541284403669724}, {"from": "The James Bond Theme (Original)_The City of Prague Philharmonic Orchestra", "to": "Merry-Go-Round of Life - from \u0027Howl\u0027s Moving Castle\u0027_Joe Hisaishi", "weight": 2.40061162079511}, {"from": "The Hanging Tree_James Newton Howard", "to": "Sweet Caroline_Neil Diamond", "weight": 4.994979612640163}, {"from": "The Hanging Tree_James Newton Howard", "to": "Sons \u0026 Daughters_The Decemberists", "weight": 4.998241590214068}, {"from": "The Hanging Tree_James Newton Howard", "to": "Both Sides Now_Judy Collins", "weight": 4.998241590214068}, {"from": "The Hanging Tree_James Newton Howard", "to": "Stressed Out_Twenty One Pilots", "weight": 4.99940876656473}, {"from": "The Hanging Tree_James Newton Howard", "to": "Just the Two of Us (feat. Bill Withers)_Grover Washington, Jr.", "weight": 2.4584352701325174}, {"from": "The Hanging Tree_James Newton Howard", "to": "Harmony Hall_Vampire Weekend", "weight": 4.995183486238532}, {"from": "The Hanging Tree_James Newton Howard", "to": "Goodbye Yellow Brick Road - Remastered 2014_Elton John", "weight": 4.929892966360857}, {"from": "The Hanging Tree_James Newton Howard", "to": "Vienna_Billy Joel", "weight": 4.998241590214068}, {"from": "The Hanging Tree_James Newton Howard", "to": "Run Away to Mars_TALK", "weight": 4.998241590214068}, {"from": "Cornfield Chase_Hans Zimmer", "to": "Star Trek Main Theme_Michael Giacchino", "weight": 3.470948012232414}, {"from": "Sweet Caroline_Neil Diamond", "to": "Sons \u0026 Daughters_The Decemberists", "weight": 4.99322120285423}, {"from": "Sweet Caroline_Neil Diamond", "to": "Both Sides Now_Judy Collins", "weight": 4.99322120285423}, {"from": "Sweet Caroline_Neil Diamond", "to": "Stressed Out_Twenty One Pilots", "weight": 4.994388379204893}, {"from": "Sweet Caroline_Neil Diamond", "to": "Just the Two of Us (feat. Bill Withers)_Grover Washington, Jr.", "weight": 2.4634556574923545}, {"from": "Sweet Caroline_Neil Diamond", "to": "Harmony Hall_Vampire Weekend", "weight": 4.999796126401631}, {"from": "Sweet Caroline_Neil Diamond", "to": "Goodbye Yellow Brick Road - Remastered 2014_Elton John", "weight": 4.934913353720693}, {"from": "Sweet Caroline_Neil Diamond", "to": "Vienna_Billy Joel", "weight": 4.99322120285423}, {"from": "Sweet Caroline_Neil Diamond", "to": "Run Away to Mars_TALK", "weight": 4.99322120285423}, {"from": "Sons \u0026 Daughters_The Decemberists", "to": "Both Sides Now_Judy Collins", "weight": 5.0}, {"from": "Sons \u0026 Daughters_The Decemberists", "to": "Stressed Out_Twenty One Pilots", "weight": 4.998832823649337}, {"from": "Sons \u0026 Daughters_The Decemberists", "to": "Just the Two of Us (feat. Bill Withers)_Grover Washington, Jr.", "weight": 2.456676860346585}, {"from": "Sons \u0026 Daughters_The Decemberists", "to": "Harmony Hall_Vampire Weekend", "weight": 4.993425076452599}, {"from": "Sons \u0026 Daughters_The Decemberists", "to": "Goodbye Yellow Brick Road - Remastered 2014_Elton John", "weight": 4.928134556574923}, {"from": "Sons \u0026 Daughters_The Decemberists", "to": "Vienna_Billy Joel", "weight": 5.0}, {"from": "Sons \u0026 Daughters_The Decemberists", "to": "Run Away to Mars_TALK", "weight": 5.0}, {"from": "Both Sides Now_Judy Collins", "to": "Stressed Out_Twenty One Pilots", "weight": 4.998832823649337}, {"from": "Both Sides Now_Judy Collins", "to": "Just the Two of Us (feat. Bill Withers)_Grover Washington, Jr.", "weight": 2.456676860346585}, {"from": "Both Sides Now_Judy Collins", "to": "Harmony Hall_Vampire Weekend", "weight": 4.993425076452599}, {"from": "Both Sides Now_Judy Collins", "to": "Goodbye Yellow Brick Road - Remastered 2014_Elton John", "weight": 4.928134556574923}, {"from": "Both Sides Now_Judy Collins", "to": "Vienna_Billy Joel", "weight": 5.0}, {"from": "Both Sides Now_Judy Collins", "to": "Run Away to Mars_TALK", "weight": 5.0}, {"from": "Stressed Out_Twenty One Pilots", "to": "Just the Two of Us (feat. Bill Withers)_Grover Washington, Jr.", "weight": 2.4578440366972476}, {"from": "Stressed Out_Twenty One Pilots", "to": "Harmony Hall_Vampire Weekend", "weight": 4.994592252803262}, {"from": "Stressed Out_Twenty One Pilots", "to": "Goodbye Yellow Brick Road - Remastered 2014_Elton John", "weight": 4.929301732925586}, {"from": "Stressed Out_Twenty One Pilots", "to": "Vienna_Billy Joel", "weight": 4.998832823649337}, {"from": "Stressed Out_Twenty One Pilots", "to": "Run Away to Mars_TALK", "weight": 4.998832823649337}, {"from": "Just the Two of Us (feat. Bill Withers)_Grover Washington, Jr.", "to": "Harmony Hall_Vampire Weekend", "weight": 2.4632517838939854}, {"from": "Just the Two of Us (feat. Bill Withers)_Grover Washington, Jr.", "to": "Goodbye Yellow Brick Road - Remastered 2014_Elton John", "weight": 2.5285423037716614}, {"from": "Just the Two of Us (feat. Bill Withers)_Grover Washington, Jr.", "to": "Vienna_Billy Joel", "weight": 2.456676860346585}, {"from": "Just the Two of Us (feat. Bill Withers)_Grover Washington, Jr.", "to": "Run Away to Mars_TALK", "weight": 2.456676860346585}, {"from": "Just the Two of Us (feat. Bill Withers)_Grover Washington, Jr.", "to": "Windy_The Association", "weight": 0.0}, {"from": "Harmony Hall_Vampire Weekend", "to": "Goodbye Yellow Brick Road - Remastered 2014_Elton John", "weight": 4.934709480122324}, {"from": "Harmony Hall_Vampire Weekend", "to": "Vienna_Billy Joel", "weight": 4.993425076452599}, {"from": "Harmony Hall_Vampire Weekend", "to": "Run Away to Mars_TALK", "weight": 4.993425076452599}, {"from": "Goodbye Yellow Brick Road - Remastered 2014_Elton John", "to": "Vienna_Billy Joel", "weight": 4.928134556574923}, {"from": "Goodbye Yellow Brick Road - Remastered 2014_Elton John", "to": "Run Away to Mars_TALK", "weight": 4.928134556574923}, {"from": "Vienna_Billy Joel", "to": "Run Away to Mars_TALK", "weight": 5.0}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {"physics": {"enabled": true, "forceAtlas2Based": {"springLength": 1}, "solver": "forceAtlas2Based"}};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
