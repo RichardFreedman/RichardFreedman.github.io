@@ -5119,8 +5119,8 @@ if (outputEl) {{
 </details>
 </div>
 </section>
-<section id="b-the-basic-settings-what-kinds-of-notes-intervals-and-ngrams" class="level2">
-<h2 class="anchored" data-anchor-id="b-the-basic-settings-what-kinds-of-notes-intervals-and-ngrams">7b The Basic Settings: What Kinds of Notes, Intervals and Ngrams?</h2>
+<section id="b-interval-settings" class="level2">
+<h2 class="anchored" data-anchor-id="b-interval-settings">7b Interval Settings</h2>
 <p>The settings: here we specify the various kinds of intervals and length of ngrams we want to find:</p>
 <div class="sourceCode" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>combine_unisons_choice <span class="op">=</span> <span class="va">False</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>combine_rests_choice <span class="op">=</span> <span class="va">False</span></span>
@@ -5152,7 +5152,7 @@ if (outputEl) {{
 <section id="c.-corpus-notes-as-barchart" class="level2">
 <h2 class="anchored" data-anchor-id="c.-corpus-notes-as-barchart">7c. Corpus Notes as Barchart</h2>
 <p>Here we consider the <em>counts</em> of all the, voice by voice</p>
-<div id="8e1fb35e-bb34-4090-8f97-0e40fa30ccc8" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-05-06T07:13:34.634038Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-05-06T07:13:34.633919Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-05-06T07:13:34.798197Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-05-06T07:13:34.797797Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-05-06T07:13:34.634028Z&quot;}" data-tags="[]" data-execution_count="18">
+<div id="8e1fb35e-bb34-4090-8f97-0e40fa30ccc8" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-05-06T11:18:48.402169Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-05-06T11:18:48.401770Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-05-06T11:18:48.467697Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-05-06T11:18:48.467299Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-05-06T11:18:48.402142Z&quot;}" data-tags="[]" data-execution_count="44">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a></span>
@@ -5192,7 +5192,7 @@ if (outputEl) {{
 <span id="cb27-35"><a href="#cb27-35" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">&#39;Note&#39;</span>,</span>
 <span id="cb27-36"><a href="#cb27-36" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span><span class="st">&#39;count&#39;</span>,</span>
 <span id="cb27-37"><a href="#cb27-37" aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span>chosen_feature_to_compare,</span>
-<span id="cb27-38"><a href="#cb27-38" aria-hidden="true" tabindex="-1"></a>    barmode<span class="op">=</span><span class="st">&#39;stack&#39;</span>,  <span class="co"># or &#39;stack&#39; if you prefer stacked bars</span></span>
+<span id="cb27-38"><a href="#cb27-38" aria-hidden="true" tabindex="-1"></a>    barmode<span class="op">=</span><span class="st">&#39;stack&#39;</span>,  <span class="co"># or &#39;group&#39; if you prefer stacked bars</span></span>
 <span id="cb27-39"><a href="#cb27-39" aria-hidden="true" tabindex="-1"></a>    color_discrete_sequence<span class="op">=</span>px.colors.qualitative.Bold,  <span class="co"># Bold color scheme</span></span>
 <span id="cb27-40"><a href="#cb27-40" aria-hidden="true" tabindex="-1"></a>    opacity<span class="op">=</span><span class="fl">1.0</span>,  <span class="co"># Full opacity for vibrant colors</span></span>
 <span id="cb27-41"><a href="#cb27-41" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span>chart_title,</span>
@@ -5218,9 +5218,9 @@ if (outputEl) {{
 <span id="cb27-61"><a href="#cb27-61" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<div>                            <div id="9f275cb7-550a-4ffc-bc5b-e0604ed0e5e7" class="plotly-graph-div" style="height:500px; width:900px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("9f275cb7-550a-4ffc-bc5b-e0604ed0e5e7")) {                    Plotly.newPlot(                        "9f275cb7-550a-4ffc-bc5b-e0604ed0e5e7",                        [{"alignmentgroup":"True","hovertemplate":"Title=Missa Veni sponsa Christi: Agnus Dei\u003cbr\u003eNote=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Missa Veni sponsa Christi: Agnus Dei","marker":{"color":"rgb(127, 60, 141)","opacity":1.0,"pattern":{"shape":""}},"name":"Missa Veni sponsa Christi: Agnus Dei","offsetgroup":"Missa Veni sponsa Christi: Agnus Dei","orientation":"v","showlegend":true,"textposition":"auto","x":["A3","A4","B-3","B2","B3","B4","C#4","C3","C4","C5","D3","D4","D5","E3","E4","E5","F#3","F#4","F3","F4","F5","G#4","G3","G4","G5","Rest"],"xaxis":"x","y":[45,53,2,1,43,35,2,14,63,46,18,64,33,23,67,19,2,5,26,50,4,1,51,91,2,128],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"Title=Missa Veni sponsa Christi: Credo\u003cbr\u003eNote=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Missa Veni sponsa Christi: Credo","marker":{"color":"rgb(17, 165, 121)","opacity":1.0,"pattern":{"shape":""}},"name":"Missa Veni sponsa Christi: Credo","offsetgroup":"Missa Veni sponsa Christi: Credo","orientation":"v","showlegend":true,"textposition":"auto","x":["A3","A4","B3","B4","C#4","C#5","C3","C4","C5","D3","D4","D5","E3","E4","E5","F#4","F#5","F3","F4","F5","G#4","G3","G4","G5","Rest"],"xaxis":"x","y":[86,138,65,111,2,3,20,138,103,29,133,71,32,140,60,19,1,44,96,20,13,83,178,11,191],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"Title=Missa Veni sponsa Christi: Gloria\u003cbr\u003eNote=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Missa Veni sponsa Christi: Gloria","marker":{"color":"rgb(57, 105, 172)","opacity":1.0,"pattern":{"shape":""}},"name":"Missa Veni sponsa Christi: Gloria","offsetgroup":"Missa Veni sponsa Christi: Gloria","orientation":"v","showlegend":true,"textposition":"auto","x":["A3","A4","B-3","B-4","B3","B4","C#4","C#5","C3","C4","C5","D3","D4","D5","E3","E4","E5","F#3","F#4","F3","F4","F5","G#3","G3","G4","G5","Rest"],"xaxis":"x","y":[49,98,1,1,38,63,3,2,13,72,71,14,99,54,13,86,36,1,11,23,75,16,1,58,110,5,103],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"Title=Missa Veni sponsa Christi: Kyrie\u003cbr\u003eNote=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Missa Veni sponsa Christi: Kyrie","marker":{"color":"rgb(242, 183, 1)","opacity":1.0,"pattern":{"shape":""}},"name":"Missa Veni sponsa Christi: Kyrie","offsetgroup":"Missa Veni sponsa Christi: Kyrie","orientation":"v","showlegend":true,"textposition":"auto","x":["A3","A4","B-3","B-4","B3","B4","C#4","C3","C4","C5","D3","D4","D5","E3","E4","E5","F#4","F3","F4","F5","G3","G4","G5","Rest"],"xaxis":"x","y":[33,75,3,3,25,49,2,4,41,49,11,53,29,10,55,22,11,18,49,9,35,80,3,82],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"Title=Missa Veni sponsa Christi: Sanctus\u003cbr\u003eNote=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Missa Veni sponsa Christi: Sanctus","marker":{"color":"rgb(231, 63, 116)","opacity":1.0,"pattern":{"shape":""}},"name":"Missa Veni sponsa Christi: Sanctus","offsetgroup":"Missa Veni sponsa Christi: Sanctus","orientation":"v","showlegend":true,"textposition":"auto","x":["A3","A4","B-3","B3","B4","C3","C4","C5","D3","D4","D5","E3","E4","E5","F#3","F#4","F#5","F3","F4","F5","G#3","G3","G4","G5","Rest"],"xaxis":"x","y":[68,66,1,75,48,19,138,52,21,109,25,24,102,13,2,16,1,36,74,3,1,74,134,3,185],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"Title=Veni sponsa Christi\u003cbr\u003eNote=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Veni sponsa Christi","marker":{"color":"rgb(128, 186, 90)","opacity":1.0,"pattern":{"shape":""}},"name":"Veni sponsa Christi","offsetgroup":"Veni sponsa Christi","orientation":"v","showlegend":true,"textposition":"auto","x":["A3","A4","B3","B4","C#4","C3","C4","C5","D3","D4","D5","E3","E4","E5","F#3","F#4","F3","F4","F5","G#4","G3","G4","G5","Rest"],"xaxis":"x","y":[38,61,39,46,1,5,58,38,9,66,26,11,62,11,1,5,16,45,7,2,33,74,2,82],"yaxis":"y","type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Note"},"categoryorder":"array","categoryarray":["Rest","C2","D2","E-2","E2","F2","F#2","G-2","G2","G#2","A-2","A2","A#2","B-2","B2","C3","C#3","D-3","D3","D#3","E-3","E3","F3","F#3","G-3","G3","G#3","A-3","A3","A#3","B-3","B3","B#3","C4","C#4","D-4","D4","D#4","E-4","E4","F4","F#4","G-4","G4","G#4","A-4","A4","A#4","B-4","B4","C5","C#5","D-5","D5","D#5","E-5","E5","F5","F#5","G-5","G5","G#5","A-5","A5","A#5","B-5","B5","C6"],"showgrid":false},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Count"},"gridcolor":"lightgray","gridwidth":0.5},"legend":{"title":{"text":"Voice"},"tracegroupgap":0},"title":{"text":"Distribution of Notes in Corpus"},"barmode":"stack","height":500,"width":900,"plot_bgcolor":"white","paper_bgcolor":"white"},                        {"responsive": true}                    ).then(function(){
+<div>                            <div id="10213da1-1f6c-493d-b432-689a125e422e" class="plotly-graph-div" style="height:500px; width:900px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("10213da1-1f6c-493d-b432-689a125e422e")) {                    Plotly.newPlot(                        "10213da1-1f6c-493d-b432-689a125e422e",                        [{"alignmentgroup":"True","hovertemplate":"Title=Missa Veni sponsa Christi: Agnus Dei\u003cbr\u003eNote=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Missa Veni sponsa Christi: Agnus Dei","marker":{"color":"rgb(127, 60, 141)","opacity":1.0,"pattern":{"shape":""}},"name":"Missa Veni sponsa Christi: Agnus Dei","offsetgroup":"Missa Veni sponsa Christi: Agnus Dei","orientation":"v","showlegend":true,"textposition":"auto","x":["A3","A4","B-3","B2","B3","B4","C#4","C3","C4","C5","D3","D4","D5","E3","E4","E5","F#3","F#4","F3","F4","F5","G#4","G3","G4","G5","Rest"],"xaxis":"x","y":[45,53,2,1,43,35,2,14,63,46,18,64,33,23,67,19,2,5,26,50,4,1,51,91,2,128],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"Title=Missa Veni sponsa Christi: Credo\u003cbr\u003eNote=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Missa Veni sponsa Christi: Credo","marker":{"color":"rgb(17, 165, 121)","opacity":1.0,"pattern":{"shape":""}},"name":"Missa Veni sponsa Christi: Credo","offsetgroup":"Missa Veni sponsa Christi: Credo","orientation":"v","showlegend":true,"textposition":"auto","x":["A3","A4","B3","B4","C#4","C#5","C3","C4","C5","D3","D4","D5","E3","E4","E5","F#4","F#5","F3","F4","F5","G#4","G3","G4","G5","Rest"],"xaxis":"x","y":[86,138,65,111,2,3,20,138,103,29,133,71,32,140,60,19,1,44,96,20,13,83,178,11,191],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"Title=Missa Veni sponsa Christi: Gloria\u003cbr\u003eNote=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Missa Veni sponsa Christi: Gloria","marker":{"color":"rgb(57, 105, 172)","opacity":1.0,"pattern":{"shape":""}},"name":"Missa Veni sponsa Christi: Gloria","offsetgroup":"Missa Veni sponsa Christi: Gloria","orientation":"v","showlegend":true,"textposition":"auto","x":["A3","A4","B-3","B-4","B3","B4","C#4","C#5","C3","C4","C5","D3","D4","D5","E3","E4","E5","F#3","F#4","F3","F4","F5","G#3","G3","G4","G5","Rest"],"xaxis":"x","y":[49,98,1,1,38,63,3,2,13,72,71,14,99,54,13,86,36,1,11,23,75,16,1,58,110,5,103],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"Title=Missa Veni sponsa Christi: Kyrie\u003cbr\u003eNote=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Missa Veni sponsa Christi: Kyrie","marker":{"color":"rgb(242, 183, 1)","opacity":1.0,"pattern":{"shape":""}},"name":"Missa Veni sponsa Christi: Kyrie","offsetgroup":"Missa Veni sponsa Christi: Kyrie","orientation":"v","showlegend":true,"textposition":"auto","x":["A3","A4","B-3","B-4","B3","B4","C#4","C3","C4","C5","D3","D4","D5","E3","E4","E5","F#4","F3","F4","F5","G3","G4","G5","Rest"],"xaxis":"x","y":[33,75,3,3,25,49,2,4,41,49,11,53,29,10,55,22,11,18,49,9,35,80,3,82],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"Title=Missa Veni sponsa Christi: Sanctus\u003cbr\u003eNote=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Missa Veni sponsa Christi: Sanctus","marker":{"color":"rgb(231, 63, 116)","opacity":1.0,"pattern":{"shape":""}},"name":"Missa Veni sponsa Christi: Sanctus","offsetgroup":"Missa Veni sponsa Christi: Sanctus","orientation":"v","showlegend":true,"textposition":"auto","x":["A3","A4","B-3","B3","B4","C3","C4","C5","D3","D4","D5","E3","E4","E5","F#3","F#4","F#5","F3","F4","F5","G#3","G3","G4","G5","Rest"],"xaxis":"x","y":[68,66,1,75,48,19,138,52,21,109,25,24,102,13,2,16,1,36,74,3,1,74,134,3,185],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"Title=Veni sponsa Christi\u003cbr\u003eNote=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Veni sponsa Christi","marker":{"color":"rgb(128, 186, 90)","opacity":1.0,"pattern":{"shape":""}},"name":"Veni sponsa Christi","offsetgroup":"Veni sponsa Christi","orientation":"v","showlegend":true,"textposition":"auto","x":["A3","A4","B3","B4","C#4","C3","C4","C5","D3","D4","D5","E3","E4","E5","F#3","F#4","F3","F4","F5","G#4","G3","G4","G5","Rest"],"xaxis":"x","y":[38,61,39,46,1,5,58,38,9,66,26,11,62,11,1,5,16,45,7,2,33,74,2,82],"yaxis":"y","type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Note"},"categoryorder":"array","categoryarray":["Rest","C2","D2","E-2","E2","F2","F#2","G-2","G2","G#2","A-2","A2","A#2","B-2","B2","C3","C#3","D-3","D3","D#3","E-3","E3","F3","F#3","G-3","G3","G#3","A-3","A3","A#3","B-3","B3","B#3","C4","C#4","D-4","D4","D#4","E-4","E4","F4","F#4","G-4","G4","G#4","A-4","A4","A#4","B-4","B4","C5","C#5","D-5","D5","D#5","E-5","E5","F5","F#5","G-5","G5","G#5","A-5","A5","A#5","B-5","B5","C6"],"showgrid":false},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Count"},"gridcolor":"lightgray","gridwidth":0.5},"legend":{"title":{"text":"Voice"},"tracegroupgap":0},"title":{"text":"Distribution of Notes in Corpus"},"barmode":"stack","height":500,"width":900,"plot_bgcolor":"white","paper_bgcolor":"white"},                        {"responsive": true}                    ).then(function(){
                             
-var gd = document.getElementById('9f275cb7-550a-4ffc-bc5b-e0604ed0e5e7');
+var gd = document.getElementById('10213da1-1f6c-493d-b432-689a125e422e');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -5245,8 +5245,9 @@ if (outputEl) {{
                         })                };                });            </script>        </div>
 </div>
 </div>
-<section id="d.-corpus-ngrams-maps" class="level3">
-<h3 class="anchored" data-anchor-id="d.-corpus-ngrams-maps">7d. Corpus Ngrams Maps</h3>
+</section>
+<section id="d.-corpus-ngrams-maps" class="level2">
+<h2 class="anchored" data-anchor-id="d.-corpus-ngrams-maps">7d. Corpus Ngrams Maps</h2>
 <p>Here we produce maps of the ngrams in each piece.</p>
 <div id="d85e4143-a975-4067-b63d-0a01ea96b6e9" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-05-06T07:31:55.448962Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-05-06T07:31:55.447763Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-05-06T07:32:02.802489Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-05-06T07:32:02.801990Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-05-06T07:31:55.448925Z&quot;}" data-execution_count="39">
 <details class="code-fold">
@@ -6020,7 +6021,6 @@ position: relative;
 </div>
 </div>
 </section>
-</section>
 <section id="e.-corpus-points-of-imtiation-and-3_2_2-patterns" class="level2">
 <h2 class="anchored" data-anchor-id="e.-corpus-points-of-imtiation-and-3_2_2-patterns">7e. Corpus Points of Imtiation and 3_2_2 patterns</h2>
 <p>Given what we observed about the opening of Morton’s chanson, with it’s fuga around the 3_2_2 formula, <strong>where else does this melody appear in the Leuven MS as a point of imitation</strong>?</p>
@@ -6407,54 +6407,43 @@ position: relative;
 </div>
 </div>
 </section>
-</section>
-<section id="corpus-cadences-with-examples" class="level1">
-<h1>9. Corpus Cadences with Examples</h1>
-<p>Here we get all the cadences, but then filter for D cadences.</p>
-<div id="daa60103-5609-48b0-92d2-1b047ccaa90a" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-05-06T07:13:43.767192Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-05-06T07:13:43.767056Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-05-06T07:13:43.777178Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-05-06T07:13:43.776409Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-05-06T07:13:43.767180Z&quot;}" data-tags="[]" data-execution_count="21">
+<section id="f.-corpus-cadences-with-examples" class="level2">
+<h2 class="anchored" data-anchor-id="f.-corpus-cadences-with-examples">7f. Corpus Cadences with Examples</h2>
+<div id="daa60103-5609-48b0-92d2-1b047ccaa90a" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-05-06T11:17:26.104403Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-05-06T11:17:26.103476Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-05-06T11:17:26.111364Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-05-06T11:17:26.110200Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-05-06T11:17:26.104363Z&quot;}" data-tags="[]" data-execution_count="42">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="co"># now specify YOUR pieces:</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="co">#  the corpus</span></span>
 <span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>my_pieces <span class="op">=</span> [<span class="st">&#39;https://crimproject.org/mei/CRIM_Model_0019.mei&#39;</span>, </span>
 <span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>             <span class="st">&#39;https://crimproject.org/mei/CRIM_Mass_0019_1.mei&#39;</span>, <span class="st">&#39;https://crimproject.org/mei/CRIM_Mass_0019_2.mei&#39;</span>, </span>
 <span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>             <span class="st">&#39;https://crimproject.org/mei/CRIM_Mass_0019_3.mei&#39;</span>, <span class="st">&#39;https://crimproject.org/mei/CRIM_Mass_0019_4.mei&#39;</span>, </span>
-<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>             <span class="st">&#39;https://crimproject.org/mei/CRIM_Mass_0019_5.mei&#39;</span>]</span>
-<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>my_pieces</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>             <span class="st">&#39;https://crimproject.org/mei/CRIM_Mass_0019_5.mei&#39;</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="21">
-<pre><code>[&#39;https://crimproject.org/mei/CRIM_Model_0019.mei&#39;,
- &#39;https://crimproject.org/mei/CRIM_Mass_0019_1.mei&#39;,
- &#39;https://crimproject.org/mei/CRIM_Mass_0019_2.mei&#39;,
- &#39;https://crimproject.org/mei/CRIM_Mass_0019_3.mei&#39;,
- &#39;https://crimproject.org/mei/CRIM_Mass_0019_4.mei&#39;,
- &#39;https://crimproject.org/mei/CRIM_Mass_0019_5.mei&#39;]</code></pre>
-</div>
 </div>
 <div id="6d93c00d-2493-4cb3-967c-7e7604e518a6" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-05-06T07:13:43.778850Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-05-06T07:13:43.778635Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-05-06T07:13:53.838568Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-05-06T07:13:53.838222Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-05-06T07:13:43.778832Z&quot;}" data-execution_count="22">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co">#build corpus</span></span>
-<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>corpus <span class="op">=</span> CorpusBase(my_pieces)</span>
-<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a><span class="co">#select function.  remember to omit &quot;()&quot;</span></span>
-<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>func <span class="op">=</span> ImportedPiece.cadences</span>
-<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a><span class="co">#run function on each piece; be sure to include keyword arguments</span></span>
-<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>list_of_dfs <span class="op">=</span> corpus.batch(func <span class="op">=</span> func, kwargs <span class="op">=</span> {<span class="st">&#39;keep_keys&#39;</span>: <span class="va">True</span>}, metadata <span class="op">=</span> <span class="va">True</span>)</span>
-<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a><span class="co">#concatenate the resulting dataframes into one</span></span>
-<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>corpus_cadences <span class="op">=</span> pd.concat(list_of_dfs, ignore_index <span class="op">=</span> <span class="va">False</span>)</span>
-<span id="cb44-12"><a href="#cb44-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb44-13"><a href="#cb44-13" aria-hidden="true" tabindex="-1"></a><span class="co"># new order for columns:</span></span>
-<span id="cb44-14"><a href="#cb44-14" aria-hidden="true" tabindex="-1"></a>col_list <span class="op">=</span> [<span class="st">&#39;Composer&#39;</span>, <span class="st">&#39;Title&#39;</span>, <span class="st">&#39;Measure&#39;</span>, <span class="st">&#39;Beat&#39;</span>, <span class="st">&#39;Pattern&#39;</span>, <span class="st">&#39;Key&#39;</span>, <span class="st">&#39;CadType&#39;</span>, <span class="st">&#39;Tone&#39;</span>,<span class="st">&#39;CVFs&#39;</span>,</span>
-<span id="cb44-15"><a href="#cb44-15" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;LeadingTones&#39;</span>, <span class="st">&#39;Sounding&#39;</span>, <span class="st">&#39;Low&#39;</span>,<span class="st">&#39;RelLow&#39;</span>,<span class="st">&#39;RelTone&#39;</span>,</span>
-<span id="cb44-16"><a href="#cb44-16" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Progress&#39;</span>,<span class="st">&#39;SinceLast&#39;</span>,<span class="st">&#39;ToNext&#39;</span>]</span>
-<span id="cb44-17"><a href="#cb44-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb44-18"><a href="#cb44-18" aria-hidden="true" tabindex="-1"></a>corpus_cadences <span class="op">=</span> corpus_cadences[col_list]</span>
-<span id="cb44-19"><a href="#cb44-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb44-20"><a href="#cb44-20" aria-hidden="true" tabindex="-1"></a><span class="co"># show the results</span></span>
-<span id="cb44-21"><a href="#cb44-21" aria-hidden="true" tabindex="-1"></a>corpus_cadences</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co">#build corpus</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>corpus <span class="op">=</span> CorpusBase(my_pieces)</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="co">#select function.  remember to omit &quot;()&quot;</span></span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>func <span class="op">=</span> ImportedPiece.cadences</span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a><span class="co">#run function on each piece; be sure to include keyword arguments</span></span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a>list_of_dfs <span class="op">=</span> corpus.batch(func <span class="op">=</span> func, kwargs <span class="op">=</span> {<span class="st">&#39;keep_keys&#39;</span>: <span class="va">True</span>}, metadata <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a><span class="co">#concatenate the resulting dataframes into one</span></span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a>corpus_cadences <span class="op">=</span> pd.concat(list_of_dfs, ignore_index <span class="op">=</span> <span class="va">False</span>)</span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a><span class="co"># new order for columns:</span></span>
+<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a>col_list <span class="op">=</span> [<span class="st">&#39;Composer&#39;</span>, <span class="st">&#39;Title&#39;</span>, <span class="st">&#39;Measure&#39;</span>, <span class="st">&#39;Beat&#39;</span>, <span class="st">&#39;Pattern&#39;</span>, <span class="st">&#39;Key&#39;</span>, <span class="st">&#39;CadType&#39;</span>, <span class="st">&#39;Tone&#39;</span>,<span class="st">&#39;CVFs&#39;</span>,</span>
+<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;LeadingTones&#39;</span>, <span class="st">&#39;Sounding&#39;</span>, <span class="st">&#39;Low&#39;</span>,<span class="st">&#39;RelLow&#39;</span>,<span class="st">&#39;RelTone&#39;</span>,</span>
+<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Progress&#39;</span>,<span class="st">&#39;SinceLast&#39;</span>,<span class="st">&#39;ToNext&#39;</span>]</span>
+<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a>corpus_cadences <span class="op">=</span> corpus_cadences[col_list]</span>
+<span id="cb43-19"><a href="#cb43-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-20"><a href="#cb43-20" aria-hidden="true" tabindex="-1"></a><span class="co"># show the results</span></span>
+<span id="cb43-21"><a href="#cb43-21" aria-hidden="true" tabindex="-1"></a>corpus_cadences</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display" data-execution_count="22">
 <div>
@@ -6734,795 +6723,61 @@ position: relative;
 <div id="5c97151c-928f-4c7b-8742-5b349a4cee59" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-05-06T07:13:53.839296Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-05-06T07:13:53.839180Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-05-06T07:13:53.845091Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-05-06T07:13:53.844773Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-05-06T07:13:53.839285Z&quot;}" data-execution_count="23">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>corpus_cadences.to_csv(<span class="st">&#39;saved_csv/palestrina_cadences.csv&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>corpus_cadences.to_csv(<span class="st">&#39;saved_csv/palestrina_cadences.csv&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="b1f4a125-4413-46ee-bd37-7161017327dc" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-05-06T07:13:53.845783Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-05-06T07:13:53.845656Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-05-06T07:14:05.538899Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-05-06T07:14:05.538438Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-05-06T07:13:53.845772Z&quot;}" data-tags="[]" data-execution_count="24">
+</section>
+<section id="g-distribution-of-cadences-by-tone-and-type" class="level2">
+<h2 class="anchored" data-anchor-id="g-distribution-of-cadences-by-tone-and-type">7g Distribution of Cadences by Tone and Type</h2>
+<div id="6ab8be83-e3b3-4feb-a228-30d965c54fcc" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-05-06T11:20:53.999872Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-05-06T11:20:53.999113Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-05-06T11:20:54.064435Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-05-06T11:20:54.063952Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-05-06T11:20:53.999833Z&quot;}" data-scrolled="true" data-execution_count="45">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span class="bu">file</span> <span class="kw">in</span> my_pieces:</span>
-<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>    fileName <span class="op">=</span> <span class="bu">file</span>.split(<span class="st">&quot;/&quot;</span>)[<span class="dv">4</span>]</span>
-<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>    piece <span class="op">=</span> importScore(<span class="bu">file</span>)</span>
-<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
-<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>        cadences <span class="op">=</span> piece.cadences()</span>
-<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>        fullUrl <span class="op">=</span> <span class="bu">file</span></span>
-<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;Cadences in &quot;</span> <span class="op">+</span> fileName)</span>
-<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>        cadences <span class="op">=</span> cadences[cadences[<span class="st">&#39;Tone&#39;</span>] <span class="op">==</span> <span class="st">&#39;D&#39;</span>]</span>
-<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>        cadences[<span class="st">&#39;Composer&#39;</span>] <span class="op">=</span> piece.metadata[<span class="st">&#39;composer&#39;</span>]</span>
-<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>        cadences[<span class="st">&#39;Title&#39;</span>] <span class="op">=</span> piece.metadata[<span class="st">&#39;title&#39;</span>]</span>
-<span id="cb46-12"><a href="#cb46-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb46-13"><a href="#cb46-13" aria-hidden="true" tabindex="-1"></a>        <span class="co"># and return the results with a link to the example</span></span>
-<span id="cb46-14"><a href="#cb46-14" aria-hidden="true" tabindex="-1"></a>        piece.linkExamples(df <span class="op">=</span> cadences, piece_url<span class="op">=</span>fullUrl)</span>
-<span id="cb46-15"><a href="#cb46-15" aria-hidden="true" tabindex="-1"></a>        <span class="co"># piece.linkExamples(df = cads, piece_url=fullUrl)</span></span>
-<span id="cb46-16"><a href="#cb46-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span>:</span>
-<span id="cb46-17"><a href="#cb46-17" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;Cadences failed for &quot;</span> <span class="op">+</span> fileName)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>Cadences in CRIM_Model_0019.mei</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">CadType</th>
-<th data-quarto-table-cell-role="th">LeadingTones</th>
-<th data-quarto-table-cell-role="th">CVFs</th>
-<th data-quarto-table-cell-role="th">Low</th>
-<th data-quarto-table-cell-role="th">RelLow</th>
-<th data-quarto-table-cell-role="th">Tone</th>
-<th data-quarto-table-cell-role="th">RelTone</th>
-<th data-quarto-table-cell-role="th">TSig</th>
-<th data-quarto-table-cell-role="th">Measure</th>
-<th data-quarto-table-cell-role="th">Beat</th>
-<th data-quarto-table-cell-role="th">Sounding</th>
-<th data-quarto-table-cell-role="th">Progress</th>
-<th data-quarto-table-cell-role="th">SinceLast</th>
-<th data-quarto-table-cell-role="th">ToNext</th>
-<th data-quarto-table-cell-role="th">Composer</th>
-<th data-quarto-table-cell-role="th">Title</th>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">Last</th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">360.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Model_0019.mei&amp;ema_expression=%2F45-46%2F2%2B3%2B4%2C2%2B3%2B4%2F%402.0-end%2B%402.0-end%2B%402.0-end%2C%40start-1.0%2B%40start-1.0%2B%40start-1.0%2Fhighlight&amp;measure_range=45-46&amp;observation=+Clausula+Vera" rel="noopener noreferrer" target="_blank">Clausula Vera</a></td>
-<td>1.0</td>
-<td>TCx</td>
-<td>D4</td>
-<td>P5</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>46.0</td>
-<td>1.0</td>
-<td>2</td>
-<td>0.681818</td>
-<td>16.0</td>
-<td>36.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Veni sponsa Christi</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">400.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Model_0019.mei&amp;ema_expression=%2F50-51%2F2%2B3%2B4%2C2%2B3%2B4%2F%402.0-end%2B%402.0-end%2B%402.0-end%2C%40start-1.0%2B%40start-1.0%2B%40start-1.0%2Fhighlight&amp;measure_range=50-51&amp;observation=+Authentic" rel="noopener noreferrer" target="_blank">Authentic</a></td>
-<td>0.0</td>
-<td>CtB</td>
-<td>D3</td>
-<td>-P4</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>51.0</td>
-<td>1.0</td>
-<td>4</td>
-<td>0.757576</td>
-<td>4.0</td>
-<td>12.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Veni sponsa Christi</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">440.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Model_0019.mei&amp;ema_expression=%2F55-56%2F3%2B4%2C3%2B4%2F%402.0-end%2B%402.0-end%2C%40start-1.0%2B%40start-1.0%2Fhighlight&amp;measure_range=55-56&amp;observation=+Altizans+Only" rel="noopener noreferrer" target="_blank">Altizans Only</a></td>
-<td>0.0</td>
-<td>AT</td>
-<td>G3</td>
-<td>P1</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>56.0</td>
-<td>1.0</td>
-<td>3</td>
-<td>0.833333</td>
-<td>28.0</td>
-<td>24.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Veni sponsa Christi</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">488.0</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>zCu</td>
-<td>F3</td>
-<td>-M2</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>62.0</td>
-<td>1.0</td>
-<td>3</td>
-<td>0.924242</td>
-<td>24.0</td>
-<td>8.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Veni sponsa Christi</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Cadences in CRIM_Mass_0019_1.mei</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">CadType</th>
-<th data-quarto-table-cell-role="th">LeadingTones</th>
-<th data-quarto-table-cell-role="th">CVFs</th>
-<th data-quarto-table-cell-role="th">Low</th>
-<th data-quarto-table-cell-role="th">RelLow</th>
-<th data-quarto-table-cell-role="th">Tone</th>
-<th data-quarto-table-cell-role="th">RelTone</th>
-<th data-quarto-table-cell-role="th">TSig</th>
-<th data-quarto-table-cell-role="th">Measure</th>
-<th data-quarto-table-cell-role="th">Beat</th>
-<th data-quarto-table-cell-role="th">Sounding</th>
-<th data-quarto-table-cell-role="th">Progress</th>
-<th data-quarto-table-cell-role="th">SinceLast</th>
-<th data-quarto-table-cell-role="th">ToNext</th>
-<th data-quarto-table-cell-role="th">Composer</th>
-<th data-quarto-table-cell-role="th">Title</th>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">Last</th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">140.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0019_1.mei&amp;ema_expression=%2F17-18%2F2%2B4%2C2%2B4%2F%404.0-end%2B%404.0-end%2C%40start-3.0%2B%40start-3.0%2Fhighlight&amp;measure_range=17-18&amp;observation=+Clausula+Vera" rel="noopener noreferrer" target="_blank">Clausula Vera</a></td>
-<td>1</td>
-<td>CT</td>
-<td>D3</td>
-<td>-P4</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>18.0</td>
-<td>3.0</td>
-<td>4.0</td>
-<td>0.257353</td>
-<td>52.0</td>
-<td>4.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Kyrie</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">452.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0019_1.mei&amp;ema_expression=%2F55-56%2F1%2B3%2B4%2C1%2B3%2B4%2F%404.0-end%2B%404.0-end%2B%404.0-end%2C%40start-3.0%2B%40start-3.0%2B%40start-3.0%2Fhighlight&amp;measure_range=55-56&amp;observation=+Clausula+Vera" rel="noopener noreferrer" target="_blank">Clausula Vera</a></td>
-<td>0</td>
-<td>QCT</td>
-<td>D3</td>
-<td>-P4</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>56.0</td>
-<td>3.0</td>
-<td>4.0</td>
-<td>0.830882</td>
-<td>16.0</td>
-<td>8.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Kyrie</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">460.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0019_1.mei&amp;ema_expression=%2F56%2C57%2F2%2B3%2B4%2C2%2B3%2B4%2F%404.5-end%404.0-end%2B%404.5-end%2B%404.0-end%2C%401-3.0%2B%401-3.0%2B%401-3.0%2Fhighlight&amp;measure_range=56-57&amp;observation=+Evaded+Authentic" rel="noopener noreferrer" target="_blank">Evaded Authentic</a></td>
-<td>1</td>
-<td>Czb</td>
-<td>B-3</td>
-<td>m3</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>57.0</td>
-<td>3.0</td>
-<td>3.0</td>
-<td>0.845588</td>
-<td>8.0</td>
-<td>4.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Kyrie</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Cadences in CRIM_Mass_0019_2.mei</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">CadType</th>
-<th data-quarto-table-cell-role="th">LeadingTones</th>
-<th data-quarto-table-cell-role="th">CVFs</th>
-<th data-quarto-table-cell-role="th">Low</th>
-<th data-quarto-table-cell-role="th">RelLow</th>
-<th data-quarto-table-cell-role="th">Tone</th>
-<th data-quarto-table-cell-role="th">RelTone</th>
-<th data-quarto-table-cell-role="th">TSig</th>
-<th data-quarto-table-cell-role="th">Measure</th>
-<th data-quarto-table-cell-role="th">Beat</th>
-<th data-quarto-table-cell-role="th">Sounding</th>
-<th data-quarto-table-cell-role="th">Progress</th>
-<th data-quarto-table-cell-role="th">SinceLast</th>
-<th data-quarto-table-cell-role="th">ToNext</th>
-<th data-quarto-table-cell-role="th">Composer</th>
-<th data-quarto-table-cell-role="th">Title</th>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">Last</th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">248.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0019_2.mei&amp;ema_expression=%2F30-32%2F1%2B4%2C1%2B4%2C1%2B4%2F%403.0-end%2B%403.0-end%2C%40all%2B%40all%2C%40start-1.0%2B%40start-1.0%2Fhighlight&amp;measure_range=30-32&amp;observation=+Authentic" rel="noopener noreferrer" target="_blank">Authentic</a></td>
-<td>1.0</td>
-<td>CB</td>
-<td>D3</td>
-<td>-P4</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>32.0</td>
-<td>1.0</td>
-<td>4.0</td>
-<td>0.313131</td>
-<td>12.0</td>
-<td>12.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Gloria</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">260.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0019_2.mei&amp;ema_expression=%2F32-33%2F3%2B4%2C3%2B4%2F%404.0-end%2B%404.0-end%2C%40start-3.0%2B%40start-3.0%2Fhighlight&amp;measure_range=32-33&amp;observation=+Evaded+Authentic" rel="noopener noreferrer" target="_blank">Evaded Authentic</a></td>
-<td>1.0</td>
-<td>Cb</td>
-<td>B-3</td>
-<td>m3</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>33.0</td>
-<td>3.0</td>
-<td>4.0</td>
-<td>0.328283</td>
-<td>12.0</td>
-<td>12.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Gloria</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">568.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0019_2.mei&amp;ema_expression=%2F70%2C71%2F2%2B3%2B4%2C2%2B3%2B4%2F%401-end%402.0-end%2B%402.0-end%2B%401-end%2C%401-1.0%2B%401-1.0%2B%401-1.0%2Fhighlight&amp;measure_range=70-71&amp;observation=+Authentic" rel="noopener noreferrer" target="_blank">Authentic</a></td>
-<td>1.0</td>
-<td>CzB</td>
-<td>D3</td>
-<td>-P4</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>71.0</td>
-<td>1.0</td>
-<td>3.0</td>
-<td>0.717172</td>
-<td>24.0</td>
-<td>44.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Gloria</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Cadences in CRIM_Mass_0019_3.mei</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">CadType</th>
-<th data-quarto-table-cell-role="th">LeadingTones</th>
-<th data-quarto-table-cell-role="th">CVFs</th>
-<th data-quarto-table-cell-role="th">Low</th>
-<th data-quarto-table-cell-role="th">RelLow</th>
-<th data-quarto-table-cell-role="th">Tone</th>
-<th data-quarto-table-cell-role="th">RelTone</th>
-<th data-quarto-table-cell-role="th">TSig</th>
-<th data-quarto-table-cell-role="th">Measure</th>
-<th data-quarto-table-cell-role="th">Beat</th>
-<th data-quarto-table-cell-role="th">Sounding</th>
-<th data-quarto-table-cell-role="th">Progress</th>
-<th data-quarto-table-cell-role="th">SinceLast</th>
-<th data-quarto-table-cell-role="th">ToNext</th>
-<th data-quarto-table-cell-role="th">Composer</th>
-<th data-quarto-table-cell-role="th">Title</th>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">Last</th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">724.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0019_3.mei&amp;ema_expression=%2F89-90%2F2%2B1%2B4%2C2%2B1%2B4%2F%404.0-end%2B%404.0-end%2B%404.0-end%2C%40start-3.0%2B%40start-3.0%2B%40start-3.0%2Fhighlight&amp;measure_range=89-90&amp;observation=+Evaded+Clausula+Vera" rel="noopener noreferrer" target="_blank">Evaded Clausula Vera</a></td>
-<td>1</td>
-<td>Ctx</td>
-<td>D4</td>
-<td>P5</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>90.0</td>
-<td>3.0</td>
-<td>3.0</td>
-<td>0.587662</td>
-<td>36.0</td>
-<td>76.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Credo</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">884.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0019_3.mei&amp;ema_expression=%2F109-110%2F3%2B4%2C3%2B4%2F%404.0-end%2B%404.0-end%2C%40start-3.0%2B%40start-3.0%2Fhighlight&amp;measure_range=109-110&amp;observation=+Clausula+Vera" rel="noopener noreferrer" target="_blank">Clausula Vera</a></td>
-<td>1</td>
-<td>CT</td>
-<td>D3</td>
-<td>-P4</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>110.0</td>
-<td>3.0</td>
-<td>3.0</td>
-<td>0.717532</td>
-<td>24.0</td>
-<td>4.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Credo</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">1038.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0019_3.mei&amp;ema_expression=%2F129-129%2F1%2B3%2F%402.0-4.0%2B%402.0-4.0%2Fhighlight&amp;measure_range=129-129&amp;observation=+Clausula+Vera" rel="noopener noreferrer" target="_blank">Clausula Vera</a></td>
-<td>0</td>
-<td>TC</td>
-<td>B3</td>
-<td>M3</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>129.0</td>
-<td>4.0</td>
-<td>4.0</td>
-<td>0.842532</td>
-<td>14.0</td>
-<td>22.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Credo</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1060.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0019_3.mei&amp;ema_expression=%2F131-132%2F2%2B4%2C2%2B4%2F%404.0-end%2B%404.0-end%2C%40start-3.0%2B%40start-3.0%2Fhighlight&amp;measure_range=131-132&amp;observation=+Authentic" rel="noopener noreferrer" target="_blank">Authentic</a></td>
-<td>1</td>
-<td>CB</td>
-<td>D4</td>
-<td>P5</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>132.0</td>
-<td>3.0</td>
-<td>4.0</td>
-<td>0.860390</td>
-<td>22.0</td>
-<td>11.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Credo</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Cadences in CRIM_Mass_0019_4.mei</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">CadType</th>
-<th data-quarto-table-cell-role="th">LeadingTones</th>
-<th data-quarto-table-cell-role="th">CVFs</th>
-<th data-quarto-table-cell-role="th">Low</th>
-<th data-quarto-table-cell-role="th">RelLow</th>
-<th data-quarto-table-cell-role="th">Tone</th>
-<th data-quarto-table-cell-role="th">RelTone</th>
-<th data-quarto-table-cell-role="th">TSig</th>
-<th data-quarto-table-cell-role="th">Measure</th>
-<th data-quarto-table-cell-role="th">Beat</th>
-<th data-quarto-table-cell-role="th">Sounding</th>
-<th data-quarto-table-cell-role="th">Progress</th>
-<th data-quarto-table-cell-role="th">SinceLast</th>
-<th data-quarto-table-cell-role="th">ToNext</th>
-<th data-quarto-table-cell-role="th">Composer</th>
-<th data-quarto-table-cell-role="th">Title</th>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">Last</th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">368.0</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>Czu</td>
-<td>F3</td>
-<td>-M2</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>46.0</td>
-<td>1.0</td>
-<td>2</td>
-<td>0.353846</td>
-<td>12.0</td>
-<td>8.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Sanctus</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">376.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0019_4.mei&amp;ema_expression=%2F46-47%2F3%2B4%2C3%2B4%2F%402.0-end%2B%402.0-end%2C%40start-1.0%2B%40start-1.0%2Fhighlight&amp;measure_range=46-47&amp;observation=+Abandoned+Authentic" rel="noopener noreferrer" target="_blank">Abandoned Authentic</a></td>
-<td>0.0</td>
-<td>Cx</td>
-<td>D4</td>
-<td>P5</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>47.0</td>
-<td>1.0</td>
-<td>2</td>
-<td>0.361538</td>
-<td>8.0</td>
-<td>20.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Sanctus</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">432.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0019_4.mei&amp;ema_expression=%2F53%2C54%2F2%2B3%2B4%2C2%2B3%2B4%2F%402.5-end%2B%402.5-end%402.0-end%2B%402.0-end%2C%401-1.0%2B%401-1.0%2B%401-1.0%2Fhighlight&amp;measure_range=53-54&amp;observation=+Clausula+Vera" rel="noopener noreferrer" target="_blank">Clausula Vera</a></td>
-<td>0.0</td>
-<td>zCT</td>
-<td>G3</td>
-<td>P1</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>54.0</td>
-<td>1.0</td>
-<td>2</td>
-<td>0.415385</td>
-<td>20.0</td>
-<td>24.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Sanctus</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Cadences in CRIM_Mass_0019_5.mei</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">CadType</th>
-<th data-quarto-table-cell-role="th">LeadingTones</th>
-<th data-quarto-table-cell-role="th">CVFs</th>
-<th data-quarto-table-cell-role="th">Low</th>
-<th data-quarto-table-cell-role="th">RelLow</th>
-<th data-quarto-table-cell-role="th">Tone</th>
-<th data-quarto-table-cell-role="th">RelTone</th>
-<th data-quarto-table-cell-role="th">TSig</th>
-<th data-quarto-table-cell-role="th">Measure</th>
-<th data-quarto-table-cell-role="th">Beat</th>
-<th data-quarto-table-cell-role="th">Sounding</th>
-<th data-quarto-table-cell-role="th">Progress</th>
-<th data-quarto-table-cell-role="th">SinceLast</th>
-<th data-quarto-table-cell-role="th">ToNext</th>
-<th data-quarto-table-cell-role="th">Composer</th>
-<th data-quarto-table-cell-role="th">Title</th>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">Last</th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">216.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0019_5.mei&amp;ema_expression=%2F27-28%2F1%2B5%2B4%2C1%2B5%2B4%2F%402.0-end%2B%402.0-end%2B%402.0-end%2C%40start-1.0%2B%40start-1.0%2B%40start-1.0%2Fhighlight&amp;measure_range=27-28&amp;observation=+Clausula+Vera" rel="noopener noreferrer" target="_blank">Clausula Vera</a></td>
-<td>1.0</td>
-<td>tCT</td>
-<td>D3</td>
-<td>-P4</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>28.0</td>
-<td>1.0</td>
-<td>4</td>
-<td>0.380282</td>
-<td>16.0</td>
-<td>12.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Agnus Dei</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">478.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0019_5.mei&amp;ema_expression=%2F59-59%2F2%2B5%2F%402.0-4.0%2B%402.0-4.0%2Fhighlight&amp;measure_range=59-59&amp;observation=+Clausula+Vera" rel="noopener noreferrer" target="_blank">Clausula Vera</a></td>
-<td>0.0</td>
-<td>CT</td>
-<td>D3</td>
-<td>-P4</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>59.0</td>
-<td>4.0</td>
-<td>4</td>
-<td>0.841549</td>
-<td>6.0</td>
-<td>6.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Agnus Dei</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">500.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0019_5.mei&amp;ema_expression=%2F61-62%2F1%2B5%2C1%2B5%2F%404.0-end%2B%404.0-end%2C%40start-3.0%2B%40start-3.0%2Fhighlight&amp;measure_range=61-62&amp;observation=+Clausula+Vera" rel="noopener noreferrer" target="_blank">Clausula Vera</a></td>
-<td>0.0</td>
-<td>CT</td>
-<td>D3</td>
-<td>-P4</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>62.0</td>
-<td>3.0</td>
-<td>4</td>
-<td>0.880282</td>
-<td>4.0</td>
-<td>24.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Agnus Dei</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">524.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0019_5.mei&amp;ema_expression=%2F64-65%2F3%2B5%2C3%2B5%2F%404.0-end%2B%404.0-end%2C%40start-3.0%2B%40start-3.0%2Fhighlight&amp;measure_range=64-65&amp;observation=+Clausula+Vera" rel="noopener noreferrer" target="_blank">Clausula Vera</a></td>
-<td>0.0</td>
-<td>CT</td>
-<td>D3</td>
-<td>-P4</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>65.0</td>
-<td>3.0</td>
-<td>4</td>
-<td>0.922535</td>
-<td>24.0</td>
-<td>8.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Agnus Dei</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">532.0</td>
-<td><a href="https://eleon024.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0019_5.mei&amp;ema_expression=%2F65-66%2F1%2B5%2C1%2B5%2F%404.0-end%2B%404.0-end%2C%40start-3.0%2B%40start-3.0%2Fhighlight&amp;measure_range=65-66&amp;observation=+Authentic" rel="noopener noreferrer" target="_blank">Authentic</a></td>
-<td>0.0</td>
-<td>CB</td>
-<td>D3</td>
-<td>-P4</td>
-<td>D</td>
-<td>P5</td>
-<td>4/2</td>
-<td>66.0</td>
-<td>3.0</td>
-<td>5</td>
-<td>0.936620</td>
-<td>8.0</td>
-<td>12.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Agnus Dei</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<section id="a.-big-picture-cadences-to-all-tones-distribution-by-tone-and-type" class="level2">
-<h2 class="anchored" data-anchor-id="a.-big-picture-cadences-to-all-tones-distribution-by-tone-and-type">10a. Big Picture: Cadences to All Tones: Distribution by Tone and Type</h2>
-<p>Clearly the D final cadences are the largest group, about twice that of the A cadences. All the others behind that.</p>
-<div id="6ab8be83-e3b3-4feb-a228-30d965c54fcc" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-05-06T07:14:05.539552Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-05-06T07:14:05.539417Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-05-06T07:14:05.617988Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-05-06T07:14:05.617500Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-05-06T07:14:05.539540Z&quot;}" data-execution_count="25">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>corpus_cadences <span class="op">=</span> pd.read_csv(<span class="st">&#39;saved_csv/palestrina_cadences.csv&#39;</span>)</span>
-<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a basic bar chart showing the count of each note</span></span>
-<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>chart_title <span class="op">=</span> <span class="st">&quot;Distribution of Notes in Corpus&quot;</span></span>
-<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a>chosen_feature_to_compare <span class="op">=</span> <span class="st">&#39;CadType&#39;</span></span>
-<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-9"><a href="#cb53-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Pre-aggregate the data (similar to your working example)</span></span>
-<span id="cb53-10"><a href="#cb53-10" aria-hidden="true" tabindex="-1"></a>grouped_data <span class="op">=</span> corpus_cadences.groupby([<span class="st">&#39;Tone&#39;</span>, chosen_feature_to_compare]).size().reset_index(name<span class="op">=</span><span class="st">&#39;count&#39;</span>)</span>
-<span id="cb53-11"><a href="#cb53-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-12"><a href="#cb53-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the bar chart with the pre-aggregated data</span></span>
-<span id="cb53-13"><a href="#cb53-13" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.bar(</span>
-<span id="cb53-14"><a href="#cb53-14" aria-hidden="true" tabindex="-1"></a>    grouped_data,</span>
-<span id="cb53-15"><a href="#cb53-15" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">&#39;Tone&#39;</span>,</span>
-<span id="cb53-16"><a href="#cb53-16" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span><span class="st">&#39;count&#39;</span>,</span>
-<span id="cb53-17"><a href="#cb53-17" aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span>chosen_feature_to_compare,</span>
-<span id="cb53-18"><a href="#cb53-18" aria-hidden="true" tabindex="-1"></a>    barmode<span class="op">=</span><span class="st">&#39;stack&#39;</span>,  <span class="co"># or &#39;stack&#39; if you prefer stacked bars</span></span>
-<span id="cb53-19"><a href="#cb53-19" aria-hidden="true" tabindex="-1"></a>    color_discrete_sequence<span class="op">=</span>px.colors.qualitative.Bold,  <span class="co"># Bold color scheme</span></span>
-<span id="cb53-20"><a href="#cb53-20" aria-hidden="true" tabindex="-1"></a>    opacity<span class="op">=</span><span class="fl">1.0</span>,  <span class="co"># Full opacity for vibrant colors</span></span>
-<span id="cb53-21"><a href="#cb53-21" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span>chart_title,</span>
-<span id="cb53-22"><a href="#cb53-22" aria-hidden="true" tabindex="-1"></a>    <span class="co"># category_orders={&#39;Note&#39;: pitch_order}</span></span>
-<span id="cb53-23"><a href="#cb53-23" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb53-24"><a href="#cb53-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-25"><a href="#cb53-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Update layout for clean appearance</span></span>
-<span id="cb53-26"><a href="#cb53-26" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
-<span id="cb53-27"><a href="#cb53-27" aria-hidden="true" tabindex="-1"></a>    xaxis_title<span class="op">=</span><span class="st">&quot;Tone&quot;</span>, </span>
-<span id="cb53-28"><a href="#cb53-28" aria-hidden="true" tabindex="-1"></a>    yaxis_title<span class="op">=</span><span class="st">&quot;count&quot;</span>,</span>
-<span id="cb53-29"><a href="#cb53-29" aria-hidden="true" tabindex="-1"></a>    legend_title<span class="op">=</span><span class="st">&#39;CadType&#39;</span>,</span>
-<span id="cb53-30"><a href="#cb53-30" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">500</span>,</span>
-<span id="cb53-31"><a href="#cb53-31" aria-hidden="true" tabindex="-1"></a>    width<span class="op">=</span><span class="dv">900</span>,</span>
-<span id="cb53-32"><a href="#cb53-32" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">&#39;white&#39;</span>,  <span class="co"># White background</span></span>
-<span id="cb53-33"><a href="#cb53-33" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">&#39;white&#39;</span>,  <span class="co"># White paper background</span></span>
-<span id="cb53-34"><a href="#cb53-34" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb53-35"><a href="#cb53-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-36"><a href="#cb53-36" aria-hidden="true" tabindex="-1"></a><span class="co"># Minimize grid lines</span></span>
-<span id="cb53-37"><a href="#cb53-37" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(showgrid<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb53-38"><a href="#cb53-38" aria-hidden="true" tabindex="-1"></a>fig.update_yaxes(gridcolor<span class="op">=</span><span class="st">&#39;lightgray&#39;</span>, gridwidth<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb53-39"><a href="#cb53-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-40"><a href="#cb53-40" aria-hidden="true" tabindex="-1"></a>fig.show()</span>
-<span id="cb53-41"><a href="#cb53-41" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>corpus_cadences <span class="op">=</span> pd.read_csv(<span class="st">&#39;saved_csv/palestrina_cadences.csv&#39;</span>)</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a basic bar chart showing the count of each note</span></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>chart_title <span class="op">=</span> <span class="st">&quot;Distribution of Notes in Corpus&quot;</span></span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>chosen_feature_to_compare <span class="op">=</span> <span class="st">&#39;CadType&#39;</span></span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Pre-aggregate the data (similar to your working example)</span></span>
+<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a>grouped_data <span class="op">=</span> corpus_cadences.groupby([<span class="st">&#39;Tone&#39;</span>, chosen_feature_to_compare]).size().reset_index(name<span class="op">=</span><span class="st">&#39;count&#39;</span>)</span>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the bar chart with the pre-aggregated data</span></span>
+<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.bar(</span>
+<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a>    grouped_data,</span>
+<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">&#39;Tone&#39;</span>,</span>
+<span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span><span class="st">&#39;count&#39;</span>,</span>
+<span id="cb45-17"><a href="#cb45-17" aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span>chosen_feature_to_compare,</span>
+<span id="cb45-18"><a href="#cb45-18" aria-hidden="true" tabindex="-1"></a>    barmode<span class="op">=</span><span class="st">&#39;stack&#39;</span>,  <span class="co"># or &#39;stack&#39; if you prefer stacked bars</span></span>
+<span id="cb45-19"><a href="#cb45-19" aria-hidden="true" tabindex="-1"></a>    color_discrete_sequence<span class="op">=</span>px.colors.qualitative.Bold,  <span class="co"># Bold color scheme</span></span>
+<span id="cb45-20"><a href="#cb45-20" aria-hidden="true" tabindex="-1"></a>    opacity<span class="op">=</span><span class="fl">1.0</span>,  <span class="co"># Full opacity for vibrant colors</span></span>
+<span id="cb45-21"><a href="#cb45-21" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span>chart_title,</span>
+<span id="cb45-22"><a href="#cb45-22" aria-hidden="true" tabindex="-1"></a>    <span class="co"># category_orders={&#39;Note&#39;: pitch_order}</span></span>
+<span id="cb45-23"><a href="#cb45-23" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb45-24"><a href="#cb45-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-25"><a href="#cb45-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Update layout for clean appearance</span></span>
+<span id="cb45-26"><a href="#cb45-26" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb45-27"><a href="#cb45-27" aria-hidden="true" tabindex="-1"></a>    xaxis_title<span class="op">=</span><span class="st">&quot;Tone&quot;</span>, </span>
+<span id="cb45-28"><a href="#cb45-28" aria-hidden="true" tabindex="-1"></a>    yaxis_title<span class="op">=</span><span class="st">&quot;count&quot;</span>,</span>
+<span id="cb45-29"><a href="#cb45-29" aria-hidden="true" tabindex="-1"></a>    legend_title<span class="op">=</span><span class="st">&#39;CadType&#39;</span>,</span>
+<span id="cb45-30"><a href="#cb45-30" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">500</span>,</span>
+<span id="cb45-31"><a href="#cb45-31" aria-hidden="true" tabindex="-1"></a>    width<span class="op">=</span><span class="dv">900</span>,</span>
+<span id="cb45-32"><a href="#cb45-32" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">&#39;white&#39;</span>,  <span class="co"># White background</span></span>
+<span id="cb45-33"><a href="#cb45-33" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">&#39;white&#39;</span>,  <span class="co"># White paper background</span></span>
+<span id="cb45-34"><a href="#cb45-34" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb45-35"><a href="#cb45-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-36"><a href="#cb45-36" aria-hidden="true" tabindex="-1"></a><span class="co"># Minimize grid lines</span></span>
+<span id="cb45-37"><a href="#cb45-37" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(showgrid<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb45-38"><a href="#cb45-38" aria-hidden="true" tabindex="-1"></a>fig.update_yaxes(gridcolor<span class="op">=</span><span class="st">&#39;lightgray&#39;</span>, gridwidth<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb45-39"><a href="#cb45-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-40"><a href="#cb45-40" aria-hidden="true" tabindex="-1"></a>fig.show()</span>
+<span id="cb45-41"><a href="#cb45-41" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<div>                            <div id="6234763f-4c15-41ab-b0a6-04e68e2dfdfa" class="plotly-graph-div" style="height:500px; width:900px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("6234763f-4c15-41ab-b0a6-04e68e2dfdfa")) {                    Plotly.newPlot(                        "6234763f-4c15-41ab-b0a6-04e68e2dfdfa",                        [{"alignmentgroup":"True","hovertemplate":"CadType=Abandoned Authentic\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Abandoned Authentic","marker":{"color":"rgb(127, 60, 141)","opacity":1.0,"pattern":{"shape":""}},"name":"Abandoned Authentic","offsetgroup":"Abandoned Authentic","orientation":"v","showlegend":true,"textposition":"auto","x":["A","C","D","G"],"xaxis":"x","y":[2,1,1,1],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Abandoned Clausula Vera\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Abandoned Clausula Vera","marker":{"color":"rgb(17, 165, 121)","opacity":1.0,"pattern":{"shape":""}},"name":"Abandoned Clausula Vera","offsetgroup":"Abandoned Clausula Vera","orientation":"v","showlegend":true,"textposition":"auto","x":["A","C"],"xaxis":"x","y":[2,5],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Altizans Only\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Altizans Only","marker":{"color":"rgb(57, 105, 172)","opacity":1.0,"pattern":{"shape":""}},"name":"Altizans Only","offsetgroup":"Altizans Only","orientation":"v","showlegend":true,"textposition":"auto","x":["A","D","G"],"xaxis":"x","y":[1,1,2],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Authentic\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Authentic","marker":{"color":"rgb(242, 183, 1)","opacity":1.0,"pattern":{"shape":""}},"name":"Authentic","offsetgroup":"Authentic","orientation":"v","showlegend":true,"textposition":"auto","x":["A","C","D","F","G"],"xaxis":"x","y":[3,7,5,1,15],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Clausula Vera\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Clausula Vera","marker":{"color":"rgb(231, 63, 116)","opacity":1.0,"pattern":{"shape":""}},"name":"Clausula Vera","offsetgroup":"Clausula Vera","orientation":"v","showlegend":true,"textposition":"auto","x":["A","C","D","G"],"xaxis":"x","y":[9,15,10,14],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Evaded Authentic\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Evaded Authentic","marker":{"color":"rgb(128, 186, 90)","opacity":1.0,"pattern":{"shape":""}},"name":"Evaded Authentic","offsetgroup":"Evaded Authentic","orientation":"v","showlegend":true,"textposition":"auto","x":["A","C","D","G"],"xaxis":"x","y":[6,6,2,9],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Evaded Clausula Vera\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Evaded Clausula Vera","marker":{"color":"rgb(230, 131, 16)","opacity":1.0,"pattern":{"shape":""}},"name":"Evaded Clausula Vera","offsetgroup":"Evaded Clausula Vera","orientation":"v","showlegend":true,"textposition":"auto","x":["A","C","D","E","G"],"xaxis":"x","y":[2,7,1,1,7],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Phrygian Clausula Vera\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Phrygian Clausula Vera","marker":{"color":"rgb(0, 134, 149)","opacity":1.0,"pattern":{"shape":""}},"name":"Phrygian Clausula Vera","offsetgroup":"Phrygian Clausula Vera","orientation":"v","showlegend":true,"textposition":"auto","x":["A","B","E"],"xaxis":"x","y":[1,1,5],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Phrygian\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Phrygian","marker":{"color":"rgb(207, 28, 144)","opacity":1.0,"pattern":{"shape":""}},"name":"Phrygian","offsetgroup":"Phrygian","orientation":"v","showlegend":true,"textposition":"auto","x":["E"],"xaxis":"x","y":[1],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Quince\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Quince","marker":{"color":"rgb(249, 123, 114)","opacity":1.0,"pattern":{"shape":""}},"name":"Quince","offsetgroup":"Quince","orientation":"v","showlegend":true,"textposition":"auto","x":["G"],"xaxis":"x","y":[1],"yaxis":"y","type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Tone"},"showgrid":false},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"count"},"gridcolor":"lightgray","gridwidth":0.5},"legend":{"title":{"text":"CadType"},"tracegroupgap":0},"title":{"text":"Distribution of Notes in Corpus"},"barmode":"stack","height":500,"width":900,"plot_bgcolor":"white","paper_bgcolor":"white"},                        {"responsive": true}                    ).then(function(){
+<div>                            <div id="eddd49e5-7e04-4a9e-8178-a73c3edb7ac0" class="plotly-graph-div" style="height:500px; width:900px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("eddd49e5-7e04-4a9e-8178-a73c3edb7ac0")) {                    Plotly.newPlot(                        "eddd49e5-7e04-4a9e-8178-a73c3edb7ac0",                        [{"alignmentgroup":"True","hovertemplate":"CadType=Abandoned Authentic\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Abandoned Authentic","marker":{"color":"rgb(127, 60, 141)","opacity":1.0,"pattern":{"shape":""}},"name":"Abandoned Authentic","offsetgroup":"Abandoned Authentic","orientation":"v","showlegend":true,"textposition":"auto","x":["A","C","D","G"],"xaxis":"x","y":[2,1,1,1],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Abandoned Clausula Vera\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Abandoned Clausula Vera","marker":{"color":"rgb(17, 165, 121)","opacity":1.0,"pattern":{"shape":""}},"name":"Abandoned Clausula Vera","offsetgroup":"Abandoned Clausula Vera","orientation":"v","showlegend":true,"textposition":"auto","x":["A","C"],"xaxis":"x","y":[2,5],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Altizans Only\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Altizans Only","marker":{"color":"rgb(57, 105, 172)","opacity":1.0,"pattern":{"shape":""}},"name":"Altizans Only","offsetgroup":"Altizans Only","orientation":"v","showlegend":true,"textposition":"auto","x":["A","D","G"],"xaxis":"x","y":[1,1,2],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Authentic\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Authentic","marker":{"color":"rgb(242, 183, 1)","opacity":1.0,"pattern":{"shape":""}},"name":"Authentic","offsetgroup":"Authentic","orientation":"v","showlegend":true,"textposition":"auto","x":["A","C","D","F","G"],"xaxis":"x","y":[3,7,5,1,15],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Clausula Vera\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Clausula Vera","marker":{"color":"rgb(231, 63, 116)","opacity":1.0,"pattern":{"shape":""}},"name":"Clausula Vera","offsetgroup":"Clausula Vera","orientation":"v","showlegend":true,"textposition":"auto","x":["A","C","D","G"],"xaxis":"x","y":[9,15,10,14],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Evaded Authentic\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Evaded Authentic","marker":{"color":"rgb(128, 186, 90)","opacity":1.0,"pattern":{"shape":""}},"name":"Evaded Authentic","offsetgroup":"Evaded Authentic","orientation":"v","showlegend":true,"textposition":"auto","x":["A","C","D","G"],"xaxis":"x","y":[6,6,2,9],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Evaded Clausula Vera\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Evaded Clausula Vera","marker":{"color":"rgb(230, 131, 16)","opacity":1.0,"pattern":{"shape":""}},"name":"Evaded Clausula Vera","offsetgroup":"Evaded Clausula Vera","orientation":"v","showlegend":true,"textposition":"auto","x":["A","C","D","E","G"],"xaxis":"x","y":[2,7,1,1,7],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Phrygian Clausula Vera\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Phrygian Clausula Vera","marker":{"color":"rgb(0, 134, 149)","opacity":1.0,"pattern":{"shape":""}},"name":"Phrygian Clausula Vera","offsetgroup":"Phrygian Clausula Vera","orientation":"v","showlegend":true,"textposition":"auto","x":["A","B","E"],"xaxis":"x","y":[1,1,5],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Phrygian\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Phrygian","marker":{"color":"rgb(207, 28, 144)","opacity":1.0,"pattern":{"shape":""}},"name":"Phrygian","offsetgroup":"Phrygian","orientation":"v","showlegend":true,"textposition":"auto","x":["E"],"xaxis":"x","y":[1],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"CadType=Quince\u003cbr\u003eTone=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Quince","marker":{"color":"rgb(249, 123, 114)","opacity":1.0,"pattern":{"shape":""}},"name":"Quince","offsetgroup":"Quince","orientation":"v","showlegend":true,"textposition":"auto","x":["G"],"xaxis":"x","y":[1],"yaxis":"y","type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Tone"},"showgrid":false},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"count"},"gridcolor":"lightgray","gridwidth":0.5},"legend":{"title":{"text":"CadType"},"tracegroupgap":0},"title":{"text":"Distribution of Notes in Corpus"},"barmode":"stack","height":500,"width":900,"plot_bgcolor":"white","paper_bgcolor":"white"},                        {"responsive": true}                    ).then(function(){
                             
-var gd = document.getElementById('6234763f-4c15-41ab-b0a6-04e68e2dfdfa');
+var gd = document.getElementById('eddd49e5-7e04-4a9e-8178-a73c3edb7ac0');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -7547,303 +6802,109 @@ if (outputEl) {{
                         })                };                });            </script>        </div>
 </div>
 </div>
-<div id="21763099-97dc-4263-89ab-7330ea164208" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-05-06T07:14:05.618586Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-05-06T07:14:05.618484Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-05-06T07:14:05.628164Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-05-06T07:14:05.627847Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-05-06T07:14:05.618575Z&quot;}" data-execution_count="26">
+</section>
+<section id="h.-radar-plot-of-cadences-in-corpus" class="level2">
+<h2 class="anchored" data-anchor-id="h.-radar-plot-of-cadences-in-corpus">7h. Radar Plot of Cadences in Corpus</h2>
+<p>Here we show the cadences in a polar plot, by proportion in each piece.</p>
+<div id="21763099-97dc-4263-89ab-7330ea164208" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-05-06T11:27:58.385586Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-05-06T11:27:58.385351Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-05-06T11:27:58.423027Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-05-06T11:27:58.422642Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-05-06T11:27:58.385564Z&quot;}" data-execution_count="52">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>corpus_cadences</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the category order</span></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>category_order <span class="op">=</span> {</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;C&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;D&#39;</span>: <span class="dv">1</span>, <span class="st">&#39;E-&#39;</span>: <span class="dv">2</span>, <span class="st">&#39;E&#39;</span>: <span class="dv">3</span>, <span class="st">&#39;F&#39;</span>: <span class="dv">4</span>, <span class="st">&#39;G&#39;</span>: <span class="dv">5</span>, <span class="st">&#39;A&#39;</span>: <span class="dv">6</span>, <span class="st">&#39;B-&#39;</span>: <span class="dv">7</span></span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Get all unique titles for this final</span></span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>titles <span class="op">=</span> corpus_cadences[<span class="st">&#39;Title&#39;</span>].unique()</span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a list to store our count data</span></span>
+<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>count_data <span class="op">=</span> []</span>
+<span id="cb46-12"><a href="#cb46-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-13"><a href="#cb46-13" aria-hidden="true" tabindex="-1"></a><span class="co"># For each title, count the occurrences of each tone</span></span>
+<span id="cb46-14"><a href="#cb46-14" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> title <span class="kw">in</span> titles:</span>
+<span id="cb46-15"><a href="#cb46-15" aria-hidden="true" tabindex="-1"></a>    title_data <span class="op">=</span> corpus_cadences[corpus_cadences[<span class="st">&#39;Title&#39;</span>] <span class="op">==</span> title]</span>
+<span id="cb46-16"><a href="#cb46-16" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb46-17"><a href="#cb46-17" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Count occurrences of each Tone for this Title</span></span>
+<span id="cb46-18"><a href="#cb46-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> tone <span class="kw">in</span> category_order.keys():</span>
+<span id="cb46-19"><a href="#cb46-19" aria-hidden="true" tabindex="-1"></a>        count <span class="op">=</span> <span class="bu">len</span>(title_data[title_data[<span class="st">&#39;Tone&#39;</span>] <span class="op">==</span> tone])</span>
+<span id="cb46-20"><a href="#cb46-20" aria-hidden="true" tabindex="-1"></a>        count_data.append({</span>
+<span id="cb46-21"><a href="#cb46-21" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;Title&#39;</span>: title,</span>
+<span id="cb46-22"><a href="#cb46-22" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;Tone&#39;</span>: tone,</span>
+<span id="cb46-23"><a href="#cb46-23" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;count&#39;</span>: count</span>
+<span id="cb46-24"><a href="#cb46-24" aria-hidden="true" tabindex="-1"></a>        })</span>
+<span id="cb46-25"><a href="#cb46-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-26"><a href="#cb46-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert to DataFrame</span></span>
+<span id="cb46-27"><a href="#cb46-27" aria-hidden="true" tabindex="-1"></a>count_df <span class="op">=</span> pd.DataFrame(count_data)</span>
+<span id="cb46-28"><a href="#cb46-28" aria-hidden="true" tabindex="-1"></a>count_df <span class="op">=</span> count_df[count_df[<span class="st">&#39;count&#39;</span>] <span class="op">&gt;</span> <span class="dv">0</span>]</span>
+<span id="cb46-29"><a href="#cb46-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-30"><a href="#cb46-30" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate % for each cadence vs total number of cadences for each piece</span></span>
+<span id="cb46-31"><a href="#cb46-31" aria-hidden="true" tabindex="-1"></a>title_sums <span class="op">=</span> count_df.groupby(<span class="st">&#39;Title&#39;</span>)[<span class="st">&#39;count&#39;</span>].<span class="bu">sum</span>().reset_index()</span>
+<span id="cb46-32"><a href="#cb46-32" aria-hidden="true" tabindex="-1"></a>title_sums.rename(columns<span class="op">=</span>{<span class="st">&#39;count&#39;</span>: <span class="st">&#39;TitleSum&#39;</span>}, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb46-33"><a href="#cb46-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-34"><a href="#cb46-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Merge the sums back to the original DataFrame</span></span>
+<span id="cb46-35"><a href="#cb46-35" aria-hidden="true" tabindex="-1"></a>count_df <span class="op">=</span> count_df.merge(title_sums, on<span class="op">=</span><span class="st">&#39;Title&#39;</span>, how<span class="op">=</span><span class="st">&#39;left&#39;</span>)</span>
+<span id="cb46-36"><a href="#cb46-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-37"><a href="#cb46-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate percentage</span></span>
+<span id="cb46-38"><a href="#cb46-38" aria-hidden="true" tabindex="-1"></a>count_df[<span class="st">&#39;Percentage&#39;</span>] <span class="op">=</span> np.<span class="bu">round</span>((count_df[<span class="st">&#39;count&#39;</span>] <span class="op">/</span> count_df[<span class="st">&#39;TitleSum&#39;</span>]) <span class="op">*</span> <span class="dv">100</span>)</span>
+<span id="cb46-39"><a href="#cb46-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-40"><a href="#cb46-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the radar plot with Plotly Express</span></span>
+<span id="cb46-41"><a href="#cb46-41" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.line_polar(</span>
+<span id="cb46-42"><a href="#cb46-42" aria-hidden="true" tabindex="-1"></a>    count_df, </span>
+<span id="cb46-43"><a href="#cb46-43" aria-hidden="true" tabindex="-1"></a>    r<span class="op">=</span><span class="st">&#39;Percentage&#39;</span>,       </span>
+<span id="cb46-44"><a href="#cb46-44" aria-hidden="true" tabindex="-1"></a>    theta<span class="op">=</span><span class="st">&#39;Tone&#39;</span>, </span>
+<span id="cb46-45"><a href="#cb46-45" aria-hidden="true" tabindex="-1"></a>    line_close<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb46-46"><a href="#cb46-46" aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span><span class="st">&#39;Title&#39;</span>,</span>
+<span id="cb46-47"><a href="#cb46-47" aria-hidden="true" tabindex="-1"></a>    markers<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb46-48"><a href="#cb46-48" aria-hidden="true" tabindex="-1"></a>    category_orders<span class="op">=</span>{<span class="st">&#39;Tone&#39;</span>: <span class="bu">sorted</span>(category_order.keys(), key<span class="op">=</span><span class="kw">lambda</span> x: category_order[x])}</span>
+<span id="cb46-49"><a href="#cb46-49" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb46-50"><a href="#cb46-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-51"><a href="#cb46-51" aria-hidden="true" tabindex="-1"></a><span class="co"># Update traces to fill the area</span></span>
+<span id="cb46-52"><a href="#cb46-52" aria-hidden="true" tabindex="-1"></a>fig.update_traces(</span>
+<span id="cb46-53"><a href="#cb46-53" aria-hidden="true" tabindex="-1"></a>    fill<span class="op">=</span><span class="st">&#39;toself&#39;</span>,</span>
+<span id="cb46-54"><a href="#cb46-54" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(width<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb46-55"><a href="#cb46-55" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb46-56"><a href="#cb46-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-57"><a href="#cb46-57" aria-hidden="true" tabindex="-1"></a><span class="co"># Update layout with size control and legend positioning</span></span>
+<span id="cb46-58"><a href="#cb46-58" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb46-59"><a href="#cb46-59" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Control the size of the plot</span></span>
+<span id="cb46-60"><a href="#cb46-60" aria-hidden="true" tabindex="-1"></a>    width<span class="op">=</span><span class="dv">800</span>,  <span class="co"># Width in pixels</span></span>
+<span id="cb46-61"><a href="#cb46-61" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">600</span>,  <span class="co"># Height in pixels</span></span>
+<span id="cb46-62"><a href="#cb46-62" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb46-63"><a href="#cb46-63" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add title</span></span>
+<span id="cb46-64"><a href="#cb46-64" aria-hidden="true" tabindex="-1"></a>    title_text<span class="op">=</span><span class="st">&quot;Relative Distribution of Cadence Tones in Corpus&quot;</span>,</span>
+<span id="cb46-65"><a href="#cb46-65" aria-hidden="true" tabindex="-1"></a>    title_x<span class="op">=</span><span class="fl">0.5</span>,  <span class="co"># Center the title</span></span>
+<span id="cb46-66"><a href="#cb46-66" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb46-67"><a href="#cb46-67" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb46-68"><a href="#cb46-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-69"><a href="#cb46-69" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="26">
-<div>
+<div class="cell-output cell-output-display">
+<div>                            <div id="1a207da9-0ce7-4c48-9975-c1000d774ac7" class="plotly-graph-div" style="height:600px; width:800px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("1a207da9-0ce7-4c48-9975-c1000d774ac7")) {                    Plotly.newPlot(                        "1a207da9-0ce7-4c48-9975-c1000d774ac7",                        [{"hovertemplate":"Title=Veni sponsa Christi\u003cbr\u003ePercentage=%{r}\u003cbr\u003eTone=%{theta}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Veni sponsa Christi","line":{"color":"#636efa","dash":"solid","width":2},"marker":{"symbol":"circle"},"mode":"lines+markers","name":"Veni sponsa Christi","r":[18.0,24.0,6.0,29.0,24.0,18.0],"showlegend":true,"subplot":"polar","theta":["C","D","E","G","A","C"],"type":"scatterpolar","fill":"toself"},{"hovertemplate":"Title=Missa Veni sponsa Christi: Kyrie\u003cbr\u003ePercentage=%{r}\u003cbr\u003eTone=%{theta}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Missa Veni sponsa Christi: Kyrie","line":{"color":"#EF553B","dash":"solid","width":2},"marker":{"symbol":"circle"},"mode":"lines+markers","name":"Missa Veni sponsa Christi: Kyrie","r":[12.0,19.0,6.0,38.0,25.0,12.0],"showlegend":true,"subplot":"polar","theta":["C","D","E","G","A","C"],"type":"scatterpolar","fill":"toself"},{"hovertemplate":"Title=Missa Veni sponsa Christi: Gloria\u003cbr\u003ePercentage=%{r}\u003cbr\u003eTone=%{theta}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Missa Veni sponsa Christi: Gloria","line":{"color":"#00cc96","dash":"solid","width":2},"marker":{"symbol":"circle"},"mode":"lines+markers","name":"Missa Veni sponsa Christi: Gloria","r":[23.0,14.0,5.0,5.0,36.0,18.0,23.0],"showlegend":true,"subplot":"polar","theta":["C","D","E","F","G","A","C"],"type":"scatterpolar","fill":"toself"},{"hovertemplate":"Title=Missa Veni sponsa Christi: Credo\u003cbr\u003ePercentage=%{r}\u003cbr\u003eTone=%{theta}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Missa Veni sponsa Christi: Credo","line":{"color":"#ab63fa","dash":"solid","width":2},"marker":{"symbol":"circle"},"mode":"lines+markers","name":"Missa Veni sponsa Christi: Credo","r":[32.0,12.0,6.0,29.0,21.0,32.0],"showlegend":true,"subplot":"polar","theta":["C","D","E","G","A","C"],"type":"scatterpolar","fill":"toself"},{"hovertemplate":"Title=Missa Veni sponsa Christi: Sanctus\u003cbr\u003ePercentage=%{r}\u003cbr\u003eTone=%{theta}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Missa Veni sponsa Christi: Sanctus","line":{"color":"#FFA15A","dash":"solid","width":2},"marker":{"symbol":"circle"},"mode":"lines+markers","name":"Missa Veni sponsa Christi: Sanctus","r":[44.0,9.0,3.0,34.0,9.0,44.0],"showlegend":true,"subplot":"polar","theta":["C","D","E","G","A","C"],"type":"scatterpolar","fill":"toself"},{"hovertemplate":"Title=Missa Veni sponsa Christi: Agnus Dei\u003cbr\u003ePercentage=%{r}\u003cbr\u003eTone=%{theta}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Missa Veni sponsa Christi: Agnus Dei","line":{"color":"#19d3f3","dash":"solid","width":2},"marker":{"symbol":"circle"},"mode":"lines+markers","name":"Missa Veni sponsa Christi: Agnus Dei","r":[23.0,19.0,4.0,38.0,15.0,23.0],"showlegend":true,"subplot":"polar","theta":["C","D","E","G","A","C"],"type":"scatterpolar","fill":"toself"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"polar":{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"angularaxis":{"direction":"clockwise","rotation":90,"categoryorder":"array","categoryarray":["C","D","E-","E","F","G","A","B-"]}},"legend":{"title":{"text":"Title"},"tracegroupgap":0},"margin":{"t":60},"title":{"text":"Relative Distribution of Cadence Tones in Corpus","x":0.5},"width":800,"height":600},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('1a207da9-0ce7-4c48-9975-c1000d774ac7');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
 
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
 
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Last</th>
-<th data-quarto-table-cell-role="th">Composer</th>
-<th data-quarto-table-cell-role="th">Title</th>
-<th data-quarto-table-cell-role="th">Measure</th>
-<th data-quarto-table-cell-role="th">Beat</th>
-<th data-quarto-table-cell-role="th">Pattern</th>
-<th data-quarto-table-cell-role="th">Key</th>
-<th data-quarto-table-cell-role="th">CadType</th>
-<th data-quarto-table-cell-role="th">Tone</th>
-<th data-quarto-table-cell-role="th">CVFs</th>
-<th data-quarto-table-cell-role="th">LeadingTones</th>
-<th data-quarto-table-cell-role="th">Sounding</th>
-<th data-quarto-table-cell-role="th">Low</th>
-<th data-quarto-table-cell-role="th">RelLow</th>
-<th data-quarto-table-cell-role="th">RelTone</th>
-<th data-quarto-table-cell-role="th">Progress</th>
-<th data-quarto-table-cell-role="th">SinceLast</th>
-<th data-quarto-table-cell-role="th">ToNext</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>48.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Veni sponsa Christi</td>
-<td>7.0</td>
-<td>1.0</td>
-<td>C1T-2u-3</td>
-<td>^C1T-2u-3$</td>
-<td>Clausula Vera</td>
-<td>G</td>
-<td>TCu</td>
-<td>1.0</td>
-<td>4.0</td>
-<td>G3</td>
-<td>P1</td>
-<td>P8</td>
-<td>0.090909</td>
-<td>48.0</td>
-<td>36.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>84.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Veni sponsa Christi</td>
-<td>11.0</td>
-<td>3.0</td>
-<td>C1t2</td>
-<td>^C(1|3)t(1|2)x?z?$</td>
-<td>Evaded Clausula Vera</td>
-<td>G</td>
-<td>tC</td>
-<td>1.0</td>
-<td>3.0</td>
-<td>G3</td>
-<td>P1</td>
-<td>P8</td>
-<td>0.159091</td>
-<td>36.0</td>
-<td>52.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>136.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Veni sponsa Christi</td>
-<td>18.0</td>
-<td>1.0</td>
-<td>C1</td>
-<td>^C(1|3)$</td>
-<td>Quince</td>
-<td>G</td>
-<td>QC</td>
-<td>1.0</td>
-<td>3.0</td>
-<td>B3</td>
-<td>M3</td>
-<td>P8</td>
-<td>0.257576</td>
-<td>52.0</td>
-<td>16.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>152.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Veni sponsa Christi</td>
-<td>20.0</td>
-<td>1.0</td>
-<td>BC1</td>
-<td>^BC(1|3)x?z?$</td>
-<td>Authentic</td>
-<td>G</td>
-<td>TCB</td>
-<td>1.0</td>
-<td>4.0</td>
-<td>G3</td>
-<td>P1</td>
-<td>P8</td>
-<td>0.287879</td>
-<td>16.0</td>
-<td>72.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>224.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Veni sponsa Christi</td>
-<td>29.0</td>
-<td>1.0</td>
-<td>C1z</td>
-<td>^C(1|3)z$</td>
-<td>Abandoned Clausula Vera</td>
-<td>C</td>
-<td>zC</td>
-<td>1.0</td>
-<td>3.0</td>
-<td>F3</td>
-<td>-M2</td>
-<td>P4</td>
-<td>0.424242</td>
-<td>72.0</td>
-<td>28.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">167</td>
-<td>500.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Agnus Dei</td>
-<td>62.0</td>
-<td>3.0</td>
-<td>C2T-2</td>
-<td>^C(2|4)T-2x?z?$</td>
-<td>Clausula Vera</td>
-<td>D</td>
-<td>CT</td>
-<td>0.0</td>
-<td>4.0</td>
-<td>D3</td>
-<td>-P4</td>
-<td>P5</td>
-<td>0.880282</td>
-<td>4.0</td>
-<td>24.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">168</td>
-<td>524.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Agnus Dei</td>
-<td>65.0</td>
-<td>3.0</td>
-<td>C2T-2</td>
-<td>^C(2|4)T-2x?z?$</td>
-<td>Clausula Vera</td>
-<td>D</td>
-<td>CT</td>
-<td>0.0</td>
-<td>4.0</td>
-<td>D3</td>
-<td>-P4</td>
-<td>P5</td>
-<td>0.922535</td>
-<td>24.0</td>
-<td>8.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">169</td>
-<td>532.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Agnus Dei</td>
-<td>66.0</td>
-<td>3.0</td>
-<td>BC2</td>
-<td>^BC(2|4)x?z?$</td>
-<td>Authentic</td>
-<td>D</td>
-<td>CB</td>
-<td>0.0</td>
-<td>5.0</td>
-<td>D3</td>
-<td>-P4</td>
-<td>P5</td>
-<td>0.936620</td>
-<td>8.0</td>
-<td>12.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">170</td>
-<td>544.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Agnus Dei</td>
-<td>68.0</td>
-<td>1.0</td>
-<td>BC1</td>
-<td>^BC(1|3)x?z?$</td>
-<td>Authentic</td>
-<td>G</td>
-<td>CTB</td>
-<td>1.0</td>
-<td>5.0</td>
-<td>G3</td>
-<td>P1</td>
-<td>P8</td>
-<td>0.957746</td>
-<td>12.0</td>
-<td>2.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">171</td>
-<td>546.0</td>
-<td>Giovanni Pierluigi da Palestrina</td>
-<td>Missa Veni sponsa Christi: Agnus Dei</td>
-<td>68.0</td>
-<td>2.0</td>
-<td>C1T-2</td>
-<td>^C(1|3)T-2x?z?$</td>
-<td>Clausula Vera</td>
-<td>C</td>
-<td>CT</td>
-<td>1.0</td>
-<td>5.0</td>
-<td>C3</td>
-<td>-P5</td>
-<td>P4</td>
-<td>0.961268</td>
-<td>2.0</td>
-<td>38.0</td>
-</tr>
-</tbody>
-</table>
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
 
-<p>172 rows × 18 columns</p>
-</div>
-</div>
-</div>
-<div id="dd5d36bc-3f70-4aa7-b2f5-45bf2e06e1a3" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-05-06T07:14:05.628932Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-05-06T07:14:05.628787Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-05-06T07:14:05.632200Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-05-06T07:14:05.631838Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-05-06T07:14:05.628920Z&quot;}" data-execution_count="27">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mm(graph):</span>
-<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>    graphbytes <span class="op">=</span> graph.encode(<span class="st">&quot;ascii&quot;</span>)</span>
-<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>    base64_bytes <span class="op">=</span> base64.b64encode(graphbytes)</span>
-<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>    base64_string <span class="op">=</span> base64_bytes.decode(<span class="st">&quot;ascii&quot;</span>)</span>
-<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Image(</span>
-<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a>        url<span class="op">=</span><span class="st">&quot;https://mermaid.ink/img/&quot;</span> <span class="op">+</span> base64_string</span>
-<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb55-9"><a href="#cb55-9" aria-hidden="true" tabindex="-1"></a>flowchart <span class="op">=</span> <span class="st">&quot;&quot;&quot;</span></span>
-<span id="cb55-10"><a href="#cb55-10" aria-hidden="true" tabindex="-1"></a><span class="st">flowchart TD</span></span>
-<span id="cb55-11"><a href="#cb55-11" aria-hidden="true" tabindex="-1"></a><span class="st">    B[Find all matching ngrams and put them in order]</span></span>
-<span id="cb55-12"><a href="#cb55-12" aria-hidden="true" tabindex="-1"></a><span class="st">    B --&gt; C[Get time differences]</span></span>
-<span id="cb55-13"><a href="#cb55-13" aria-hidden="true" tabindex="-1"></a><span class="st">    C --&gt; D{Check differences}</span></span>
-<span id="cb55-14"><a href="#cb55-14" aria-hidden="true" tabindex="-1"></a><span class="st">    D --&gt;|All differences equal| E[PEN]</span></span>
-<span id="cb55-15"><a href="#cb55-15" aria-hidden="true" tabindex="-1"></a><span class="st">    D --&gt;|Odd numbered differences equal| F[ID]</span></span>
-<span id="cb55-16"><a href="#cb55-16" aria-hidden="true" tabindex="-1"></a><span class="st">    D --&gt;|No differences equal| G[FUGA]</span></span>
-<span id="cb55-17"><a href="#cb55-17" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;&quot;&quot;</span></span>
-<span id="cb55-18"><a href="#cb55-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb55-19"><a href="#cb55-19" aria-hidden="true" tabindex="-1"></a>mm(flowchart)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="27">
-<img role="img" src="data:image/jpeg;base64,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">
+                        })                };                });            </script>        </div>
 </div>
 </div>
 </section>
