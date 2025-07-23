@@ -1,3 +1,9 @@
+---
+layout: page
+title: Home
+permalink: /
+---
+
 # Digital Examples for Richard Freedman TITLE
 
 
