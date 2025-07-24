@@ -57,7 +57,7 @@ Phrase 3E in graphical notation and as tabular data in CRIM Intervals.  Horizont
 
 #### Figure 5.  Visual epresentation of the weighted distribution of notes
 
-Visual representation of the weighted distribution (according to the relative duration of all notes of a given pitch class) in Josquin’s motet and Palestrina’s Kyrie.  Produced with CRIM Intervals (https://github.com/HCDigitalScholarship/intervals). For an interactive digital color version see URL: https://richardfreedman.github.io/palestrina_josquin/Corpus_Note_Plot_Kyries.html
+Visual representation of the weighted distribution (according to the relative duration of all notes of a given pitch class) in Josquin’s motet and Palestrina’s Kyrie.  Produced with CRIM Intervals (https://github.com/HCDigitalScholarship/intervals). 
 
 <img src="palestrina_josquin/F_05_Note_Radar.svg" alt="Note radar plot" style="width: 100%; max-width: 800px;">
 
