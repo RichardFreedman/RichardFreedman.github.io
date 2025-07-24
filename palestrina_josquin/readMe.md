@@ -22,7 +22,9 @@ Figure 5.  Visual representation of the weighted distribution (according to the 
 
 Figure 6.  Two instances of Phrase 3E of Josquin’s motet, as ‘nGrams’ of melodic intervals.  The temporal distances between successive entries can be calculated via the “offset’ column which provides a mathematical index of the position of each event in each piece.
 
-Figure 7.  CRIM Intervals chart representing the melodic nGrams in Josquin’s motet.  The left edge of the chart represents the beginning of the piece; the right edge is the end.  The voice parts are aligned from top to bottom in a score-like arrangement.  The multiple repetitions of Phrases 3E/F and 4E/F can clearly been seen at the center of the chart. 
+#### Figure 7.  nGrams in Josquin's Motet
+
+CRIM Intervals chart representing the melodic nGrams in Josquin’s motet.  The left edge of the chart represents the beginning of the piece; the right edge is the end.  The voice parts are aligned from top to bottom in a score-like arrangement.  The multiple repetitions of Phrases 3E/F and 4E/F can clearly been seen at the center of the chart. 
 
 <img src="josquin_benedicta_ngrams_visualization.html" alt="Josquin Benedicta nGrams" style="width: 100%; max-width: 800px;">
 
@@ -41,7 +43,7 @@ Example 2:  Complementary fugas based on Phrases 1D and 5L in the Superius and T
 
 Example 3.  Contrasting fugas based on the same melodic idea from Notker’s sequence, as seen in Josquin’s Benedicta es, mm. 108-13 and 136-45.  Phrase 5I is set as a florid fuga for two upper parts; Phrase 6I (which is the same tune) is treated in a contrasting meter, simpler melodic style, but as a complex set of interlocking entries for all six voices. The Bassus is what Milsom could term “flexed”, since it follows a similar profile but with various intervallic (or durational) changes. The discantus, tenor, quinta vox and sexta vox form what Schubert would call a pair of Imitative Duos. 
 
-#### Example 4
+#### Example 4 Fugas in Mouton's Benedicta es
 
 Fugas and hidden presentation types in Phrases 4E and 4F of Jean Mouton's, Benedicta es, mm. 62-7. For a complete edition of the work see url: [CRIM Model 0021](https://crimproject.org/pdf/CRIM_Model_0021.pdf).
 
