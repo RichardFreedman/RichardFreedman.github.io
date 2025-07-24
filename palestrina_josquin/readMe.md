@@ -41,7 +41,7 @@ Example 2:  Complementary fugas based on Phrases 1D and 5L in the Superius and T
 
 Example 3.  Contrasting fugas based on the same melodic idea from Notker’s sequence, as seen in Josquin’s Benedicta es, mm. 108-13 and 136-45.  Phrase 5I is set as a florid fuga for two upper parts; Phrase 6I (which is the same tune) is treated in a contrasting meter, simpler melodic style, but as a complex set of interlocking entries for all six voices. The Bassus is what Milsom could term “flexed”, since it follows a similar profile but with various intervallic (or durational) changes. The discantus, tenor, quinta vox and sexta vox form what Schubert would call a pair of Imitative Duos. 
 
-#### [Example 4](./palestrina_josquin/Ex_04_Mouton_Phrase_4A.svg)  
+#### [Example 4]({{ site.baseurl }}/palestrina_josquin/Ex_04_Mouton_Phrase_4A.svg)  
 
 Fugas and hidden presentation types in Phrases 4E and 4F of Jean Mouton’s, Benedicta es, mm. 62-7. For a complete edition of the work see url:  https://crimproject.org/pdf/CRIM_Model_0021.pdf. 
 
