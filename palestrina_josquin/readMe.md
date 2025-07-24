@@ -61,6 +61,11 @@ Visual representation of the weighted distribution (according to the relative du
 
 <img src="palestrina_josquin/F_05_Note_Radar.svg" alt="Note radar plot" style="width: 100%; max-width: 800px;">
 
+
+[**→ View Interactive Version**](https://richardfreedman.github.io/palestrina_josquin/Corpus_Note_Plot_Kyries.html)
+
+*Click the link above to explore the full interactive chart in a new tab.*
+
 #### Figure 6.  CRIM nGrams
 
 Two instances of Phrase 3E of Josquin’s motet, as ‘nGrams’ of melodic intervals.  The temporal distances between successive entries can be calculated via the “offset’ column which provides a mathematical index of the position of each event in each piece.
