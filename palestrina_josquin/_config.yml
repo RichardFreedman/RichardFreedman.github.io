@@ -10,6 +10,13 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# Process HTML files automatically
+defaults:
+  - scope:
+      path: "*.html"
+    values:
+      layout: none
+
 # Collections
 collections:
   visualizations:
