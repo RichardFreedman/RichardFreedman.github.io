@@ -27,39 +27,95 @@ SVG model
 -->
 ### Figures 
 
-#### Figure 1.  
+#### Figure 1.  Santa María’s Fugas
+
 How to create fugas at different pitch and time intervals, from Tomás de Santa María, Arte de tañer fantasía (Valladolid, 1565), II, fol 65r-v (Book 2, Chapter 33).
 
-Figure 2.  Schubert’s Presentation Types in Graphical-Schematic Form.  Matching black traces are meant to suggest matching soggetti.  The small boxes around the graphical patterns are meant to represent repeating harmonic modules.
-
-Figure 3.  Schematic view of a CRIM Relationship, showing annotated scores and observer’s claim about the patterns and type of transformation.  View online at:  https://crimproject.org/relationships/1407/ 
+<img src="palestrina_josquin/F_01_SantaMaria_Fugas.svg" alt="Santa Maria" style="width: 100%; max-width: 800px;">
 
 
-Figure 4. Phrase 3E in graphical notation and as tabular data in CRIM Intervals.  Horizontal staves are transformed as vertical columns. This table shows only pitch information, but all music features (durations, lyrics, intervals, patterns of intervals) can be transformed in this way, and combined for sophisticated analysis.
+#### Figure 2.  Schubert’s Presentation Types
 
-Figure 5.  Visual representation of the weighted distribution (according to the relative duration of all notes of a given pitch class) in Josquin’s motet and Palestrina’s Kyrie.  Produced with CRIM Intervals (https://github.com/HCDigitalScholarship/intervals). For an interactive digital color version see URL: https://richardfreedman.github.io/palestrina_josquin/Corpus_Note_Plot_Kyries.html
+Schubert’s Presentation Types in Graphical-Schematic Form.  Matching black traces are meant to suggest matching soggetti.  The small boxes around the graphical patterns are meant to represent repeating harmonic modules.
 
-Figure 6.  Two instances of Phrase 3E of Josquin’s motet, as ‘nGrams’ of melodic intervals.  The temporal distances between successive entries can be calculated via the “offset’ column which provides a mathematical index of the position of each event in each piece.
+
+<img src="palestrina_josquin/F_02_Presentation_Types.svg" alt="Presentation Types" style="width: 100%; max-width: 800px;">
+
+#### Figure 3.  Schematic view of a CRIM Relationship
+
+Schematic view of a CRIM Relationship, showing annotated scores and observer’s claim about the patterns and type of transformation.  View online at:  https://crimproject.org/relationships/1407/ 
+
+<img src="palestrina_josquin/F_03_CRIM_Relationship.svg" alt="CRIM Relationship" style="width: 100%; max-width: 800px;">
+
+
+#### Figure 4. Phrase 3E in graphical notation and as tabular data in CRIM Intervals
+
+Phrase 3E in graphical notation and as tabular data in CRIM Intervals.  Horizontal staves are transformed as vertical columns. This table shows only pitch information, but all music features (durations, lyrics, intervals, patterns of intervals) can be transformed in this way, and combined for sophisticated analysis.
+
+<img src="palestrina_josquin/F_04_CRIM_Notes.svg" alt="CRIM Notes" style="width: 100%; max-width: 800px;">
+
+
+#### Figure 5.  Visual epresentation of the weighted distribution of notes
+
+Visual representation of the weighted distribution (according to the relative duration of all notes of a given pitch class) in Josquin’s motet and Palestrina’s Kyrie.  Produced with CRIM Intervals (https://github.com/HCDigitalScholarship/intervals). For an interactive digital color version see URL: https://richardfreedman.github.io/palestrina_josquin/Corpus_Note_Plot_Kyries.html
+
+<img src="palestrina_josquin/F_05_Note_Radar.svg" alt="Note radar plot" style="width: 100%; max-width: 800px;">
+
+#### Figure 6.  CRIM nGrams
+
+Two instances of Phrase 3E of Josquin’s motet, as ‘nGrams’ of melodic intervals.  The temporal distances between successive entries can be calculated via the “offset’ column which provides a mathematical index of the position of each event in each piece.
+
+
+<img src="palestrina_josquin/F_06_CRIM_Ngrams.svg" alt="CRIM nGrams" style="width: 100%; max-width: 800px;">
+
+
 
 #### Figure 7.  nGrams in Josquin's Motet
 
 
-**Interactive n-Gram Visualization**
-
 CRIM Intervals chart representing the melodic nGrams in Josquin's motet. The left edge of the chart represents the beginning of the piece; the right edge is the end. The voice parts are aligned from top to bottom in a score-like arrangement. The multiple repetitions of Phrases 3E/F and 4E/F can clearly been seen at the center of the chart.
 
-[**→ View Interactive Visualization**](https://richardfreedman.github.io/palestrina_josquin/josquin_benedicta_ngrams_visualization.html)
+<img src="palestrina_josquin/F_07_Josquin_Heatmap.svg" alt="Josquin heatmap" style="width: 100%; max-width: 800px;">
+
+
+[**→ View Interactive Version**](https://richardfreedman.github.io/palestrina_josquin/josquin_benedicta_ngrams_visualization.html)
 
 *Click the link above to explore the full interactive chart in a new tab.*
 
-Figure 8.  Shared melodic nGrams (diatonic, length of 4 intervals) in Josquin’s motet and Palestrina’s Kyrie; matching colors indicate matching nGrams. The marked sections show concentrations of closely repeated entries of Phrase 3E/F and 4E/F motives, along with an example of a what Milsom terms a ‘singleton’ (statement without interlock).  See an interactive digital version at URL:  https://richardfreedman.github.io/palestrina_josquin/josquin_palestrina_kyrie_comparison.html
+#### Figure 8.  Shared melodic nGrams in Josquin’s motet and Palestrina’s Kyrie
 
-Figure 9.  Schematic diagram of presentation type classification system with CRIM Intervals
-
-Figure 10.  CRIM Intervals assembles details about each pair of entries of the given fuga soggetto, recording information about the time and pitch distances between entries and the harmonic nGrams they form through their interlock.
+<img src="palestrina_josquin/F_08_CRIM_Logic.svg" alt="CRIM Logic" style="width: 100%; max-width: 800px;">
 
 
-Musical Examples
+Shared melodic nGrams (diatonic, length of 4 intervals) in Josquin’s motet and Palestrina’s Kyrie; matching colors indicate matching nGrams. The marked sections show concentrations of closely repeated entries of Phrase 3E/F and 4E/F motives, along with an example of a what Milsom terms a ‘singleton’ (statement without interlock).  
+
+[**→ View Interactive Version**](https://richardfreedman.github.io/palestrina_josquin/josquin_palestrina_kyrie_comparison.html)
+
+*Click the link above to explore the full interactive chart in a new tab.*
+
+#### Figure 9.  Logical Flow of Presentation Type Classification System
+
+Schematic diagram of presentation type classification system with CRIM Intervals
+
+
+<img src="palestrina_josquin/F_09_Josquin_Palestrina_Heatmap.svg" alt="Josquin Palestrina Heatmap" style="width: 100%; max-width: 800px;">
+
+
+#### Figure 10.  Sample Data for Fuga Pair
+
+CRIM Intervals assembles details about each pair of entries of the given fuga soggetto, recording information about the time and pitch distances between entries and the harmonic nGrams they form through their interlock.
+
+<img src="palestrina_josquin/F_10_Josquin_Fuga_Sample.svg" alt="Fuga Data Sample" style="width: 100%; max-width: 800px;">
+
+
+#### Figure 11. Scatterplot of Fuga Pair Data
+
+Scatter Plot of Two-Voice Fugas made with Phrase 3E Soggeto in the Complete Benedicta es Corpus.  The various pairings of melodic and time intervals between entries is in the y-axis; the harmonic nGrams produced by the interlocks are in the x-axis. Morales and Palestrina invent an large number of new interlocks with Josquin’s soggetto; all three share but a single one. For an interactive color version of the plot (including data for all the composers in the corpus) see
+
+<img src="palestrina_josquin/F_11_Fuga_Scatter.svg" alt="Fuga Scatterplot" style="width: 100%; max-width: 800px;">
+
+
+## Musical Examples
 
 Example 1:  Related Melodic Phrases in Notker’s Benedicta es.  Modern edition from The CRIM Project (url: https://crimproject.org/pieces/CRIM_Model_0022), based on Boston, Museum of Fine Arts, Ms 80.504, fols. 112v - 113v, a sequentiary compiled at the Convent of St. Louis de Poissy some time during the 14th century.  See https://collections.mfa.org/objects/53348/sequentiary?ctx=0e8a4040-38a6-4ee2-b8ad-24f2a8266df9&idx=67
 
