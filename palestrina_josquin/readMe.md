@@ -24,14 +24,14 @@ Figure 6.  Two instances of Phrase 3E of Josquin’s motet, as ‘nGrams’ of m
 
 #### Figure 7.  nGrams in Josquin's Motet
 
+
 **Interactive n-Gram Visualization**
 
 CRIM Intervals chart representing the melodic nGrams in Josquin's motet. The left edge of the chart represents the beginning of the piece; the right edge is the end. The voice parts are aligned from top to bottom in a score-like arrangement. The multiple repetitions of Phrases 3E/F and 4E/F can clearly been seen at the center of the chart.
 
-[**→ View Interactive Visualization**](josquin_benedicta_ngrams_visualization.html)
+[**→ View Interactive Visualization**](palestrina_josquin/josquin_benedicta_ngrams_visualization.html)
 
 *Click the link above to explore the full interactive chart in a new tab.*
-
 
 Figure 8.  Shared melodic nGrams (diatonic, length of 4 intervals) in Josquin’s motet and Palestrina’s Kyrie; matching colors indicate matching nGrams. The marked sections show concentrations of closely repeated entries of Phrase 3E/F and 4E/F motives, along with an example of a what Milsom terms a ‘singleton’ (statement without interlock).  See an interactive digital version at URL:  https://richardfreedman.github.io/palestrina_josquin/josquin_palestrina_kyrie_comparison.html
 
