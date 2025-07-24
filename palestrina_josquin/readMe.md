@@ -43,7 +43,7 @@ Example 3.  Contrasting fugas based on the same melodic idea from Notker’s seq
 
 #### Example 4
 
-<a href="{{ site.baseurl }}/palestrina_josquin/Ex_04_Mouton_Phrase_4A.svg">
+<a href="/palestrina_josquin/Ex_04_Mouton_Phrase_4A.svg">
     Example 4
 </a>
 
