@@ -1,10 +1,18 @@
 ---
 layout: page
-title: Home
-permalink: /
+permalink: /guides/links/
 ---
 
-# Digital Examples for Richard Freedman TITLE
+# Collection of Useful Resources
 
+## Getting Started
+- [Installation Guide](https://example.com/install)
+- [Quick Start Tutorial](https://example.com/tutorial)
 
-[Figure 5.  Visual representation of the weighted distribution (according to the relative duration of all notes of a given pitch class) in Josquin’s motet and Palestrina’s Kyrie](Corpus_Note_Plot_Kyries.html))
+## Reference Materials
+- [API Documentation](https://api.example.com/docs)
+- [FAQ Page](https://example.com/faq)
+
+## Community Links
+- [Discussion Forum](https://forum.example.com)
+- [Support Channel](https://support.example.com)
