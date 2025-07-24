@@ -22,9 +22,9 @@ Figure 5.  Visual representation of the weighted distribution (according to the 
 
 Figure 6.  Two instances of Phrase 3E of Josquin’s motet, as ‘nGrams’ of melodic intervals.  The temporal distances between successive entries can be calculated via the “offset’ column which provides a mathematical index of the position of each event in each piece.
 
-Figure 7.  CRIM Intervals chart representing the melodic nGrams in Josquin’s motet.  The left edge of the chart represents the beginning of the piece; the right edge is the end.  The voice parts are aligned from top to bottom in a score-like arrangement.  The multiple repetitions of Phrases 3E/F and 4E/F can clearly been seen at the center of the chart. View an interactive version of the chart live at URL:  https://richardfreedman.github.io/palestrina_josquin/josquin_benedicta_ngrams_visualization.html
+Figure 7.  CRIM Intervals chart representing the melodic nGrams in Josquin’s motet.  The left edge of the chart represents the beginning of the piece; the right edge is the end.  The voice parts are aligned from top to bottom in a score-like arrangement.  The multiple repetitions of Phrases 3E/F and 4E/F can clearly been seen at the center of the chart. 
 
-
+<img src="josquin_benedicta_ngrams_visualization.html" alt="Josquin Benedicta nGrams" style="width: 100%; max-width: 800px;">
 
 Figure 8.  Shared melodic nGrams (diatonic, length of 4 intervals) in Josquin’s motet and Palestrina’s Kyrie; matching colors indicate matching nGrams. The marked sections show concentrations of closely repeated entries of Phrase 3E/F and 4E/F motives, along with an example of a what Milsom terms a ‘singleton’ (statement without interlock).  See an interactive digital version at URL:  https://richardfreedman.github.io/palestrina_josquin/josquin_palestrina_kyrie_comparison.html
 
