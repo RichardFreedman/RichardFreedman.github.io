@@ -84,7 +84,7 @@ CRIM Intervals chart representing the melodic nGrams in Josquin's motet. The lef
 
 #### Figure 8.  Shared melodic nGrams in Josquin’s motet and Palestrina’s Kyrie
 
-<img src="palestrina_josquin/F_08_CRIM_Logic.svg" alt="CRIM Logic" style="width: 100%; max-width: 800px;">
+<img src="palestrina_josquin/F_09_Josquin_Palestrina_Heatmap.svg" alt="Shared Ngrams" style="width: 100%; max-width: 800px;">
 
 
 Shared melodic nGrams (diatonic, length of 4 intervals) in Josquin’s motet and Palestrina’s Kyrie; matching colors indicate matching nGrams. The marked sections show concentrations of closely repeated entries of Phrase 3E/F and 4E/F motives, along with an example of a what Milsom terms a ‘singleton’ (statement without interlock).  
@@ -98,7 +98,7 @@ Shared melodic nGrams (diatonic, length of 4 intervals) in Josquin’s motet and
 Schematic diagram of presentation type classification system with CRIM Intervals
 
 
-<img src="palestrina_josquin/F_09_Josquin_Palestrina_Heatmap.svg" alt="Josquin Palestrina Heatmap" style="width: 100%; max-width: 800px;">
+<img src="palestrina_josquin/F_08_CRIM_Logic.svg" alt="CRIM Logic" style="width: 100%; max-width: 800px;">
 
 
 #### Figure 10.  Sample Data for Fuga Pair
@@ -147,7 +147,7 @@ Contrasting fugas based on the same melodic idea from Notker’s sequence, as se
 
 Fugas and hidden presentation types in Phrases 4E and 4F of Jean Mouton's, Benedicta es, mm. 62-7. For a complete edition of the work see url: [CRIM Model 0021](https://crimproject.org/pdf/CRIM_Model_0021.pdf).
 
-<img src="palestrina_josquin/Ex_04_Mouton_Phrase_4A.svg" alt="Mouton Phrase 4A" style="width: 100%; max-width: 800px;">
+<img src="palestrina_josquin/Ex_04_Mouton_4E_F.svg" alt="Mouton Phrase 4A" style="width: 100%; max-width: 800px;">
 
 
 #### Example 5: Fugas and hidden Imitative Duos in Josquin’s Benedicta es
