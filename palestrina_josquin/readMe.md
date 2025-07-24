@@ -28,7 +28,7 @@ Figure 6.  Two instances of Phrase 3E of Josquin’s motet, as ‘nGrams’ of m
 
 CRIM Intervals chart representing the melodic nGrams in Josquin's motet. The left edge of the chart represents the beginning of the piece; the right edge is the end. The voice parts are aligned from top to bottom in a score-like arrangement. The multiple repetitions of Phrases 3E/F and 4E/F can clearly been seen at the center of the chart.
 
-[**→ View Interactive Visualization**](josquin_benedicta_ngrams_visualization.html)
+[**→ View Interactive Visualization**](palestrina_josquin/palestrina_josquin/josquin_benedicta_ngrams_visualization.html)
 
 *Click the link above to explore the full interactive chart in a new tab.*
 
