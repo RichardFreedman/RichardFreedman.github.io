@@ -1,7 +1,7 @@
 # Site settings
 title: Your Site Title
 description: Your site description
-baseurl: "/RichardFreedman.github.io"
+baseurl: ""  # Leave empty for username.github.io repos
 url: "https://RichardFreedman.github.io"
 
 # Build settings
