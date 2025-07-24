@@ -43,7 +43,9 @@ Example 3.  Contrasting fugas based on the same melodic idea from Notker’s seq
 
 #### Example 4
 
-[Example 4]({{ site.baseurl }}/palestrina_josquin/Ex_04_Mouton_Phrase_4A.svg)  
+<a href="{{ site.baseurl }}/palestrina_josquin/Ex_04_Mouton_Phrase_4A.svg">
+    Example 4
+</a>
 
 Fugas and hidden presentation types in Phrases 4E and 4F of Jean Mouton’s, Benedicta es, mm. 62-7. For a complete edition of the work see url:  https://crimproject.org/pdf/CRIM_Model_0021.pdf. 
 
