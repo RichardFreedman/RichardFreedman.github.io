@@ -6,19 +6,25 @@
 
 This repository contains musical examples and visualizations that accompany the book "Echoes of Josquin: Palestrina's Missa Benedicta es and the Digital Ear" by Richard Freedman. Many of them are interactive, and produced with [CRIM Intervals tools](https://github.com/HCDigitalScholarship/intervals), a software package developed by the author. 
 
-
-<!-- Test 1: Root relative -->
+<!--
+ Test 1: Root relative 
 [Test 1](./josquin_benedicta_ngrams_visualization.html)
 
-<!-- Test 2: Subfolder relative -->
+ Test 2: Subfolder relative 
 [Test 2](palestrina_josquin/josquin_benedicta_ngrams_visualization.html)
 
-<!-- Test 3: Absolute path -->
+ Test 3: Absolute path 
 [Test 3](/palestrina_josquin/josquin_benedicta_ngrams_visualization.html)
 
-<!-- Test 4: Full URL -->
+Test 4: Full URL 
 [Test 4](https://richardfreedman.github.io/palestrina_josquin/josquin_benedicta_ngrams_visualization.html)
 
+
+SVG model
+
+<img src="palestrina_josquin/Ex_04_Mouton_Phrase_4A.svg" alt="Mouton Phrase 4A" style="width: 100%; max-width: 800px;">
+
+-->
 ### Figures 
 
 #### Figure 1.  
