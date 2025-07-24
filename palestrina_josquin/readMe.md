@@ -43,12 +43,10 @@ Example 3.  Contrasting fugas based on the same melodic idea from Notker’s seq
 
 #### Example 4
 
-<img src="palestrina_josquin/Ex_04_Mouton_Phrase_4A.svg" alt="Mouton Phrase 4A" style="width: 100%; max-width: 800px;">
-
-
 Fugas and hidden presentation types in Phrases 4E and 4F of Jean Mouton's, Benedicta es, mm. 62-7. For a complete edition of the work see url: [CRIM Model 0021](https://crimproject.org/pdf/CRIM_Model_0021.pdf).
 
-Fugas and hidden presentation types in Phrases 4E and 4F of Jean Mouton’s, Benedicta es, mm. 62-7. For a complete edition of the work see url:  https://crimproject.org/pdf/CRIM_Model_0021.pdf. 
+<img src="palestrina_josquin/Ex_04_Mouton_Phrase_4A.svg" alt="Mouton Phrase 4A" style="width: 100%; max-width: 800px;">
+
 
 Example 5. Fugas and hidden Imitative Duos in Phrases 3E and 3F of Josquin’s Benedicta es, mm. 72-79.   There are also two ‘dovetail’ cadences in the passage:  one in measure 73 (where the Sexta vox enters an octave below the C in the Quinta vox) and in measure 75 (where the Bassus enters an octave above the G in the Sexta vox).
 
