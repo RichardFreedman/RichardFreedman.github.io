@@ -33,6 +33,8 @@ How to create fugas at different pitch and time intervals, from Tomás de Santa 
 
 <img src="palestrina_josquin/F_01_SantaMaria_Fugas.svg" alt="Santa Maria" style="width: 100%; max-width: 800px;">
 
+---
+
 
 #### Figure 2.  Schubert’s Presentation Types
 
@@ -41,6 +43,10 @@ Schubert’s Presentation Types in Graphical-Schematic Form.  Matching black tra
 
 <img src="palestrina_josquin/F_02_Presentation_Types.svg" alt="Presentation Types" style="width: 100%; max-width: 800px;">
 
+
+---
+
+
 #### Figure 3.  Schematic view of a CRIM Relationship
 
 Schematic view of a CRIM Relationship, showing annotated scores and observer’s claim about the patterns and type of transformation.  View online at:  https://crimproject.org/relationships/1407/ 
@@ -48,11 +54,17 @@ Schematic view of a CRIM Relationship, showing annotated scores and observer’s
 <img src="palestrina_josquin/F_03_CRIM_Relationship.svg" alt="CRIM Relationship" style="width: 100%; max-width: 800px;">
 
 
+---
+
+
 #### Figure 4. Phrase 3E in graphical notation and as tabular data in CRIM Intervals
 
 Phrase 3E in graphical notation and as tabular data in CRIM Intervals.  Horizontal staves are transformed as vertical columns. This table shows only pitch information, but all music features (durations, lyrics, intervals, patterns of intervals) can be transformed in this way, and combined for sophisticated analysis.
 
 <img src="palestrina_josquin/F_04_CRIM_Notes.svg" alt="CRIM Notes" style="width: 100%; max-width: 800px;">
+
+
+---
 
 
 #### Figure 5.  Visual epresentation of the weighted distribution of notes
@@ -66,6 +78,9 @@ Visual representation of the weighted distribution (according to the relative du
 
 *Click the link above to explore the full interactive chart in a new tab.*
 
+---
+
+
 #### Figure 6.  CRIM nGrams
 
 Two instances of Phrase 3E of Josquin’s motet, as ‘nGrams’ of melodic intervals.  The temporal distances between successive entries can be calculated via the “offset’ column which provides a mathematical index of the position of each event in each piece.
@@ -73,6 +88,8 @@ Two instances of Phrase 3E of Josquin’s motet, as ‘nGrams’ of melodic inte
 
 <img src="palestrina_josquin/F_06_CRIM_Ngrams.svg" alt="CRIM nGrams" style="width: 100%; max-width: 800px;">
 
+
+---
 
 
 #### Figure 7.  nGrams in Josquin's Motet
@@ -87,6 +104,9 @@ CRIM Intervals chart representing the melodic nGrams in Josquin's motet. The lef
 
 *Click the link above to explore the full interactive chart in a new tab.*
 
+---
+
+
 #### Figure 8.  Shared melodic nGrams in Josquin’s motet and Palestrina’s Kyrie
 
 <img src="palestrina_josquin/F_09_Josquin_Palestrina_Heatmap.svg" alt="Shared Ngrams" style="width: 100%; max-width: 800px;">
@@ -98,12 +118,19 @@ Shared melodic nGrams (diatonic, length of 4 intervals) in Josquin’s motet and
 
 *Click the link above to explore the full interactive chart in a new tab.*
 
+---
+
+
 #### Figure 9.  Logical Flow of Presentation Type Classification System
 
 Schematic diagram of presentation type classification system with CRIM Intervals
 
 
 <img src="palestrina_josquin/F_08_CRIM_Logic.svg" alt="CRIM Logic" style="width: 100%; max-width: 800px;">
+
+
+---
+
 
 
 #### Figure 10.  Sample Data for Fuga Pair
@@ -113,11 +140,18 @@ CRIM Intervals assembles details about each pair of entries of the given fuga so
 <img src="palestrina_josquin/F_10_Josquin_Fuga_Sample.svg" alt="Fuga Data Sample" style="width: 100%; max-width: 800px;">
 
 
+---
+
+
+
 #### Figure 11. Scatterplot of Fuga Pair Data
 
 Scatter Plot of Two-Voice Fugas made with Phrase 3E Soggeto in the Complete Benedicta es Corpus.  The various pairings of melodic and time intervals between entries is in the y-axis; the harmonic nGrams produced by the interlocks are in the x-axis. Morales and Palestrina invent an large number of new interlocks with Josquin’s soggetto; all three share but a single one. For an interactive color version of the plot (including data for all the composers in the corpus) see
 
 <img src="palestrina_josquin/F_11_Fuga_Scatter.svg" alt="Fuga Scatterplot" style="width: 100%; max-width: 800px;">
+
+
+---
 
 
 ### Musical Examples
@@ -130,12 +164,18 @@ Related Melodic Phrases in Notker’s Benedicta es.  Modern edition from The CRI
 <img src="palestrina_josquin/Ex_01_Notker.svg" alt="Notker Sequence" style="width: 100%; max-width: 800px;">
 
 
+---
+
+
 #### Example 2:  Complementary fugas from Mouton’s Benedicta es
 
 Complementary fugas based on Phrases 1D and 5L in the Superius and Tenor parts of  Mouton’s Benedicta es, mm 17-21 and 105-08.  The Altus and Bassus parts are omitted for clarity.  For a complete edition of the work see url:  https://crimproject.org/pdf/CRIM_Model_0021.pdf. 
 
 
 <img src="palestrina_josquin/Ex_02_Mouton.svg" alt="Mouton Fugas" style="width: 100%; max-width: 800px;">
+
+
+---
 
 
 
@@ -148,11 +188,17 @@ Contrasting fugas based on the same melodic idea from Notker’s sequence, as se
 <img src="palestrina_josquin/Ex_03_Josquin_Benedicta_5_6.svg" alt="Josquin Contrasts" style="width: 100%; max-width: 800px;">
 
 
+---
+
+
 #### Example 4: Fugas in Mouton's Benedicta es
 
 Fugas and hidden presentation types in Phrases 4E and 4F of Jean Mouton's, Benedicta es, mm. 62-7. For a complete edition of the work see url: [CRIM Model 0021](https://crimproject.org/pdf/CRIM_Model_0021.pdf).
 
 <img src="palestrina_josquin/Ex_04_Mouton_4E_F.svg" alt="Mouton Phrase 4A" style="width: 100%; max-width: 800px;">
+
+
+---
 
 
 #### Example 5: Fugas and hidden Imitative Duos in Josquin’s Benedicta es
@@ -165,12 +211,18 @@ Fugas and hidden Imitative Duos in Phrases 3E and 3F of Josquin’s Benedicta es
 
 
 
+---
+
+
 #### Example 6: Fugas and hidden presentation types in Josquin’s Benedicta es
 
 Fugas and hidden presentation types in Phrases 4E and 4F of Josquin’s Benedicta es, mm. 86-92.  The first entry (in the quinta vox) makes a new dovetail with the cadence to G between the tenor and sexta vox.
 
 
 <img src="palestrina_josquin/Ex_06_Josquin_4E_F.svg" alt="Josquin Phrase 4E/F" style="width: 100%; max-width: 800px;">
+
+---
+
 
 #### Example 7:  The Kyrie of Palestrina’s Missa Benedicta es
 
@@ -179,3 +231,5 @@ The Kyrie of Palestrina’s Mass, showing the first of over two-dozen statements
 
 <img src="palestrina_josquin/Ex_07_Palestrina_3E.svg" alt="Palestrina Fugas" style="width: 100%; max-width: 800px;">
 
+
+---
