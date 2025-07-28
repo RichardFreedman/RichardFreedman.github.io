@@ -89,7 +89,7 @@ SVG model
 <img src="SVG/Daser_Lasso_Figure_7.svg" alt="Motet Melodic Entries" style="width: 100%; max-width: 800px;">
 
 
-[**→ View Interactive Version**](https://richardfreedman.github.io/palestrina_josquin/Phrase_3E_corpus_sankey_color.html)
+[**→ View Interactive Version**](https://richardfreedman.github.io/daser_lasso/daser_motet_ngrams_visualization.html)
 
 
 *Click the link above to explore the full interactive chart in a new tab.*
