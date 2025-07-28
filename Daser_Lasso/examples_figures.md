@@ -30,7 +30,6 @@ SVG model
 
 ### Figure 1:  Daser’s Motet at a Glance
 
-SVG/Daser_Lasso_Figure_1.svg
 
 <img src="SVG/Daser_Lasso_Figure_1.svg" alt="Daser's Motet" style="width: 100%; max-width: 800px;">
 
@@ -40,9 +39,7 @@ SVG/Daser_Lasso_Figure_1.svg
 ### Figure 2:  Parallel Borrowings in the Gloria Movements by Daser and Lasso
 
 
-
 <img src="SVG/Daser_Lasso_Figure_2.svg" alt="Gloria Borrowings" style="width: 100%; max-width: 800px;">
-
 
 ---
 
@@ -71,13 +68,10 @@ SVG/Daser_Lasso_Figure_1.svg
 ### Figure 5:  CRIM Intervals Representation of Melodic Intervals
 
 
-
-
 <img src="SVG/Daser_Lasso_Figure_5.svg" alt="CRIM Melodic Intervals" style="width: 100%; max-width: 800px;">
 
 
 ---
-
 
 
 ### Figure 6:  CRIM Intervals Representation of Recurring Ngrams
@@ -86,17 +80,11 @@ SVG/Daser_Lasso_Figure_1.svg
 <img src="SVG/Daser_Lasso_Figure_6.svg" alt="CRIM Ngrams" style="width: 100%; max-width: 800px;">
 
 
-
-
 ---
-
-
 
 
 ### Figure 7:  A Color Map of Melodic Entries in Daser’s Motet
 
-
-C
 
 <img src="SVG/Daser_Lasso_Figure_7.svg" alt="Motet Melodic Entries" style="width: 100%; max-width: 800px;">
 
@@ -118,6 +106,10 @@ C
 <img src="SVG/Daser_Lasso_Figure_8.svg" alt="Daser Shared Kyrie Entries" style="width: 100%; max-width: 800px;">
 
 
+[**→ View Interactive Version**](https://richardfreedman.github.io/palestrina_josquin/Phrase_3E_corpus_sankey_color.html)
+
+
+*Click the link above to explore the full interactive chart in a new tab.*
 
 
 ---
@@ -128,6 +120,11 @@ C
 
 
 <img src="SVG/Daser_Lasso_Figure_9.svg" alt="Lasso Shared Melodic Entries" style="width: 100%; max-width: 800px;">
+
+[**→ View Interactive Version**](https://richardfreedman.github.io/palestrina_josquin/Phrase_3E_corpus_sankey_color.html)
+
+
+*Click the link above to explore the full interactive chart in a new tab.*
 
 
 ---
@@ -146,8 +143,6 @@ C
 
 
 
-
-
 <img src="SVG/Daser_Lasso_Figure_11.svg" alt="Manuscript Erasure" style="width: 100%; max-width: 800px;">
 
 
@@ -159,7 +154,7 @@ C
 
 
 
-<img src="SVG/Daser_Lasso_Example_1.svg" alt="Notker Sequence" style="width: 100%; max-width: 800px;">
+<img src="SVG/Daser_Lasso_Example_1.svg" alt="Daser Imitative Duos" style="width: 100%; max-width: 800px;">
 
 
 ---
@@ -170,7 +165,7 @@ C
 
 
 
-<img src="palestrina_josquin/Ex_02_Mouton_4E_F.svg" alt="Mouton Phrase 4A" style="width: 100%; max-width: 800px;">
+<img src="SVG/Daser_Lasso_Example_2.svg" alt="Daser Soggetto 2 Motet" style="width: 100%; max-width: 800px;">
 
 
 ---
@@ -182,7 +177,7 @@ C
 
 
 
-<img src="palestrina_josquin/Ex_03_Josquin_3E_F.svg" alt="Josquin Duos" style="width: 100%; max-width: 800px;">
+<img src="SVG/Daser_Lasso_Example_3.svg" alt="Daser Soggetto 2 Gloria" style="width: 100%; max-width: 800px;">
 
 
 
@@ -195,7 +190,7 @@ C
 
 
 
-<img src="palestrina_josquin/Ex_04_Josquin_4E_F.svg" alt="Josquin Phrase 4E/F" style="width: 100%; max-width: 800px;">
+<img src="SVG/Daser_Lasso_Example_4.svg" alt="Daser Soggeto 2 Lasso Christe" style="width: 100%; max-width: 800px;">
 
 ---
 
@@ -204,22 +199,16 @@ C
 
 
 
+<img src="SVG/Daser_Lasso_Example_5.svg" alt="Daser Soggeto 2 Lasso Gloria" style="width: 100%; max-width: 800px;">
 
 
-<img src="palestrina_josquin/Ex_05_Palestrina_3E.svg" alt="Palestrina Fugas" style="width: 100%; max-width: 800px;">
-
-
----
 ---
 
 
 ### Example 6:  Soggetto 3 in Daser’s Motet
 
 
-
-
-
-<img src="palestrina_josquin/Ex_05_Palestrina_3E.svg" alt="Palestrina Fugas" style="width: 100%; max-width: 800px;">
+<img src="SVG/Daser_Lasso_Example_6.svg" alt="Daser Soggetto 3" style="width: 100%; max-width: 800px;">
 
 
 ---
@@ -232,7 +221,7 @@ C
 
 
 
-<img src="palestrina_josquin/Ex_05_Palestrina_3E.svg" alt="Palestrina Fugas" style="width: 100%; max-width: 800px;">
+<img src="SVG/Daser_Lasso_Example_7.svg" alt="Soggetto 3 Daser Credo" style="width: 100%; max-width: 800px;">
 
 
 ---
@@ -242,10 +231,7 @@ C
 
 
 
-
-
-
-<img src="palestrina_josquin/Ex_05_Palestrina_3E.svg" alt="Palestrina Fugas" style="width: 100%; max-width: 800px;">
+<img src="SVG/Daser_Lasso_Example_8.svg" alt="Soggetto 3 Lasso Credo" style="width: 100%; max-width: 800px;">
 
 
 ---
@@ -256,7 +242,7 @@ C
 
 
 
-<img src="palestrina_josquin/Ex_05_Palestrina_3E.svg" alt="Palestrina Fugas" style="width: 100%; max-width: 800px;">
+<img src="SVG/Daser_Lasso_Example_9.svg" alt="Credo Text Representation" style="width: 100%; max-width: 800px;">
 
 
 ---
@@ -267,7 +253,7 @@ C
 
 
 
-<img src="palestrina_josquin/Ex_05_Palestrina_3E.svg" alt="Palestrina Fugas" style="width: 100%; max-width: 800px;">
+<img src="SVG/Daser_Lasso_Example_10.svg" alt="Lasso Catholicam" style="width: 100%; max-width: 800px;">
 
 
 ---
@@ -278,7 +264,7 @@ C
 
 
 
-<img src="palestrina_josquin/Ex_05_Palestrina_3E.svg" alt="Palestrina Fugas" style="width: 100%; max-width: 800px;">
+<img src="SVG/Daser_Lasso_Example_11.svg" alt="Daser Catholicam" style="width: 100%; max-width: 800px;">
 
 
 ---
