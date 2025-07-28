@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "vconcat": [{"data": {"name": "data-78c48fd66790931d3e4d3fa4386d2e48"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "pattern", "legend": {"title": "Pattern"}, "scale": {"domain": ["1, 5", "-3, 2", "1, 1", "2, -2", "1, 4"], "range": ["#1f77b4", "#ff7f0e", "#9467bd", "#8c564b", "#bcbd22"]}, "type": "nominal"}, "opacity": {"condition": {"param": "param_64", "value": 1}, "value": 0.2}, "tooltip": [{"field": "start", "type": "quantitative"}, {"field": "end", "type": "quantitative"}, {"field": "pattern", "type": "nominal"}], "x": {"field": "start", "type": "quantitative"}, "x2": {"field": "end"}, "y": {"field": "voice", "sort": null, "type": "nominal"}}, "height": 200, "name": "view_27", "title": "Shared Melodic nGrams in Ludovicus Daser - Ecce nunc benedicite", "width": 500}, {"data": {"name": "data-23dad9e10cf61a2e41508193e895fc6e"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "pattern", "legend": {"title": "Pattern"}, "scale": {"domain": ["1, 5", "-3, 2", "1, 1", "2, -2", "1, 4"], "range": ["#1f77b4", "#ff7f0e", "#9467bd", "#8c564b", "#bcbd22"]}, "type": "nominal"}, "opacity": {"condition": {"param": "param_66", "value": 1}, "value": 0.2}, "tooltip": [{"field": "start", "type": "quantitative"}, {"field": "end", "type": "quantitative"}, {"field": "pattern", "type": "nominal"}], "x": {"field": "start", "type": "quantitative"}, "x2": {"field": "end"}, "y": {"field": "voice", "sort": null, "type": "nominal"}}, "height": 200, "name": "view_28", "title": "Shared Melodic nGrams in Ludovi[cus] Daser - Daser Missa Ecce nunc Benedicite:  Kyrie", "width": 500}], "params": [{"name": "param_64", "select": {"type": "point", "fields": ["pattern"]}, "views": ["view_27"]}, {"name": "param_66", "select": {"type": "point", "fields": ["pattern"]}, "views": ["view_28"]}], "resolve": {"scale": {"color": "independent"}}, "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-78c48fd66790931d3e4d3fa4386d2e48": [{"start": 0.0, "voice": "           Sopran          ", "pattern": "1, 5", "end": 8.0, "color": "#1f77b4"}, {"start": 118.0, "voice": "           Sopran          ", "pattern": "-3, 2", "end": 124.0, "color": "#ff7f0e"}, {"start": 186.0, "voice": "           Sopran          ", "pattern": "-3, 2", "end": 192.0, "color": "#ff7f0e"}, {"start": 354.0, "voice": "           Sopran          ", "pattern": "-3, 2", "end": 358.0, "color": "#ff7f0e"}, {"start": 398.0, "voice": "           Sopran          ", "pattern": "1, 1", "end": 403.0, "color": "#9467bd"}, {"start": 424.0, "voice": "           Sopran          ", "pattern": "2, -2", "end": 431.0, "color": "#8c564b"}, {"start": 4.0, "voice": "           Alt          ", "pattern": "1, 5", "end": 12.0, "color": "#1f77b4"}, {"start": 24.0, "voice": "           Alt          ", "pattern": "1, 4", "end": 32.0, "color": "#bcbd22"}, {"start": 126.0, "voice": "           Alt          ", "pattern": "-3, 2", "end": 132.0, "color": "#ff7f0e"}, {"start": 190.0, "voice": "           Alt          ", "pattern": "-3, 2", "end": 194.0, "color": "#ff7f0e"}, {"start": 270.0, "voice": "           Alt          ", "pattern": "-3, 2", "end": 274.0, "color": "#ff7f0e"}, {"start": 382.0, "voice": "           Alt          ", "pattern": "1, 1", "end": 387.0, "color": "#9467bd"}, {"start": 398.0, "voice": "           Alt          ", "pattern": "1, 1", "end": 403.0, "color": "#9467bd"}, {"start": 588.0, "voice": "           Alt          ", "pattern": "2, -2", "end": 616.0, "color": "#8c564b"}, {"start": 12.0, "voice": "           Tenor          ", "pattern": "1, 5", "end": 20.0, "color": "#1f77b4"}, {"start": 32.0, "voice": "           Tenor          ", "pattern": "1, 4", "end": 40.0, "color": "#bcbd22"}, {"start": 90.0, "voice": "           Tenor          ", "pattern": "1, 1", "end": 96.0, "color": "#9467bd"}, {"start": 150.0, "voice": "           Tenor          ", "pattern": "-3, 2", "end": 156.0, "color": "#ff7f0e"}, {"start": 202.0, "voice": "           Tenor          ", "pattern": "-3, 2", "end": 208.0, "color": "#ff7f0e"}, {"start": 390.0, "voice": "           Tenor          ", "pattern": "1, 1", "end": 395.0, "color": "#9467bd"}, {"start": 20.0, "voice": "           Bass          ", "pattern": "1, 4", "end": 28.0, "color": "#bcbd22"}, {"start": 40.0, "voice": "           Bass          ", "pattern": "1, 5", "end": 48.0, "color": "#1f77b4"}, {"start": 162.0, "voice": "           Bass          ", "pattern": "-3, 2", "end": 168.0, "color": "#ff7f0e"}, {"start": 210.0, "voice": "           Bass          ", "pattern": "-3, 2", "end": 216.0, "color": "#ff7f0e"}, {"start": 412.0, "voice": "           Bass          ", "pattern": "2, -2", "end": 419.0, "color": "#8c564b"}], "data-23dad9e10cf61a2e41508193e895fc6e": [{"start": 0.0, "voice": "Discantus", "pattern": "1, 5", "end": 8.0, "color": "#1f77b4"}, {"start": 96.0, "voice": "Discantus", "pattern": "-3, 2", "end": 104.0, "color": "#ff7f0e"}, {"start": 184.0, "voice": "Discantus", "pattern": "1, 1", "end": 191.0, "color": "#9467bd"}, {"start": 202.0, "voice": "Discantus", "pattern": "1, 1", "end": 207.0, "color": "#9467bd"}, {"start": 240.0, "voice": "Discantus", "pattern": "2, -2", "end": 247.0, "color": "#8c564b"}, {"start": 4.0, "voice": "Contratenor", "pattern": "1, 5", "end": 12.0, "color": "#1f77b4"}, {"start": 24.0, "voice": "Contratenor", "pattern": "1, 4", "end": 32.0, "color": "#bcbd22"}, {"start": 106.0, "voice": "Contratenor", "pattern": "-3, 2", "end": 112.0, "color": "#ff7f0e"}, {"start": 146.0, "voice": "Contratenor", "pattern": "2, -2", "end": 150.0, "color": "#8c564b"}, {"start": 184.0, "voice": "Contratenor", "pattern": "1, 1", "end": 191.0, "color": "#9467bd"}, {"start": 202.0, "voice": "Contratenor", "pattern": "1, 1", "end": 207.0, "color": "#9467bd"}, {"start": 12.0, "voice": "Tenor", "pattern": "1, 5", "end": 20.0, "color": "#1f77b4"}, {"start": 32.0, "voice": "Tenor", "pattern": "1, 4", "end": 40.0, "color": "#bcbd22"}, {"start": 130.0, "voice": "Tenor", "pattern": "-3, 2", "end": 136.0, "color": "#ff7f0e"}, {"start": 194.0, "voice": "Tenor", "pattern": "1, 1", "end": 199.0, "color": "#9467bd"}, {"start": 20.0, "voice": "Bassus", "pattern": "1, 4", "end": 28.0, "color": "#bcbd22"}, {"start": 40.0, "voice": "Bassus", "pattern": "1, 5", "end": 48.0, "color": "#1f77b4"}, {"start": 140.0, "voice": "Bassus", "pattern": "-3, 2", "end": 148.0, "color": "#ff7f0e"}, {"start": 228.0, "voice": "Bassus", "pattern": "2, -2", "end": 235.0, "color": "#8c564b"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
