@@ -117,7 +117,7 @@ Contrapuntal Pathways for Strict 2-Voice Fugas built from Phrase 3E soggetto, by
 [**→ View Interactive Version**](https://richardfreedman.github.io/palestrina_josquin/Phrase_3E_corpus_sankey_color.html)
 
 
-*Click the link above to explore the full interactive chart in a new tab.**Click the link above to explore the full interactive chart in a new tab.*
+*Click the link above to explore the full interactive chart in a new tab.*
 
 ---
 
