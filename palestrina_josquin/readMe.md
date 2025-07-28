@@ -114,7 +114,7 @@ Contrapuntal Pathways for Strict 2-Voice Fugas built from Phrase 3E soggetto, by
 <img src="palestrina_josquin/F_08_Fuga_flowchart.svg" alt="Fuga Scatterplot" style="width: 100%; max-width: 800px;">
 
 
-[**→ View Interactive Version**](https://richardfreedman.github.io/palestrina_josquin/Phrase_3E_corpus_sankey_color.html)
+[**→ View Interactive Version**](https://richardfreedman.github.io/palestrina_josquin/josquin_palestrina_sankey_flow.html)
 
 
 *Click the link above to explore the full interactive chart in a new tab.*
