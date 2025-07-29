@@ -47,41 +47,31 @@ Schubert’s Presentation Types in Graphical-Schematic Form.  Matching black tra
 ---
 
 
-### Figure 3.  Schematic view of a CRIM Relationship
-
-Schematic view of a CRIM Relationship, showing annotated scores and observer’s claim about the patterns and type of transformation.  View online at:  https://crimproject.org/relationships/1407/ 
-
-<img src="palestrina_josquin/F_03_CRIM_Relationship.svg" alt="CRIM Relationship" style="width: 100%; max-width: 800px;">
-
-
----
-
-
-### Figure 4. Phrase 3E in graphical notation and as tabular data in CRIM Intervals
+### Figure 3.  Phrase 3E in graphical notation and as tabular data in CRIM Intervals
 
 Phrase 3E in graphical notation and as tabular data in CRIM Intervals.  Horizontal staves are transformed as vertical columns. This table shows only pitch information, but all music features (durations, lyrics, intervals, patterns of intervals) can be transformed in this way, and combined for sophisticated analysis.
 
-<img src="palestrina_josquin/F_04_CRIM_Notes.svg" alt="CRIM Notes" style="width: 100%; max-width: 800px;">
+<img src="palestrina_josquin/F_03_CRIM_Notes.svg" alt="CRIM Notes" style="width: 100%; max-width: 800px;">
 
 
 ---
 
 
-### Figure 5.  CRIM nGrams
+### Figure 4.  CRIM nGrams
 
 Two instances of Phrase 3E of Josquin’s motet, as ‘nGrams’ of melodic intervals.  The temporal distances between successive entries can be calculated via the “offset’ column which provides a mathematical index of the position of each event in each piece.
 
 
-<img src="palestrina_josquin/F_05_CRIM_Ngrams.svg" alt="CRIM nGrams" style="width: 100%; max-width: 800px;">
+<img src="palestrina_josquin/F_04_CRIM_Ngrams.svg" alt="CRIM nGrams" style="width: 100%; max-width: 800px;">
 
 
 ---
 
 
 
-### Figure 6.  Shared melodic nGrams in Josquin’s motet and Palestrina’s Kyrie
+### Figure 5.  Shared melodic nGrams in Josquin’s motet and Palestrina’s Kyrie
 
-<img src="palestrina_josquin/F_06_Josquin_Palestrina_Heatmap.svg" alt="Shared Ngrams" style="width: 100%; max-width: 800px;">
+<img src="palestrina_josquin/F_05_Josquin_Palestrina_Heatmap.svg" alt="Shared Ngrams" style="width: 100%; max-width: 800px;">
 
 
 Shared melodic nGrams (diatonic, length of 4 intervals) in Josquin’s motet and Palestrina’s Kyrie; matching colors indicate matching nGrams. The marked sections show concentrations of closely repeated entries of Phrase 3E/F and 4E/F motives, along with an example of a what Milsom terms a ‘singleton’ (statement without interlock).  
@@ -95,26 +85,26 @@ Shared melodic nGrams (diatonic, length of 4 intervals) in Josquin’s motet and
 
 
 
-### Figure 7.  Sample Data for Fuga Pair
+### Figure 6.  Sample Data for Fuga Pair
 
 CRIM Intervals assembles details about each pair of entries of the given fuga soggetto, recording information about the time and pitch distances between entries and the harmonic nGrams they form through their interlock.
 
-<img src="palestrina_josquin/F_07_Josquin_Fuga_Sample.svg" alt="Fuga Data Sample" style="width: 100%; max-width: 800px;">
+<img src="palestrina_josquin/F_06_Josquin_Fuga_Sample.svg" alt="Fuga Data Sample" style="width: 100%; max-width: 800px;">
 
 
 ---
 
 
 
-### Figure 8. Flowchart of Two-Voice Fugas, Interlocks and nGrams
+### Figure 7. Flowchart of Two-Voice Fugas, Interlocks and nGrams
 
 Contrapuntal Pathways for Strict 2-Voice Fugas built from Phrase 3E soggetto, by composer, melodic intervals between entries, time intervals between entries, and harmonic nGrams formed by interlocks. 
 
 
-<img src="palestrina_josquin/F_08_Fuga_flowchart.svg" alt="Fuga Scatterplot" style="width: 100%; max-width: 800px;">
+<img src="palestrina_josquin/F_07_Fuga_flowchart.svg" alt="Fuga Scatterplot" style="width: 100%; max-width: 800px;">
 
 
-[**→ View Interactive Version**](https://richardfreedman.github.io/palestrina_josquin/josquin_palestrina_sankey_flow.html)
+[**→ View Interactive Version**](https://richardfreedman.github.io/palestrina_josquin/josquin_palestrina_phrase_3E_sankey_flow.html)
 
 
 *Click the link above to explore the full interactive chart in a new tab.*
@@ -124,82 +114,70 @@ Contrapuntal Pathways for Strict 2-Voice Fugas built from Phrase 3E soggetto, by
 
 ### Musical Examples
 
-### Example 1:  Related Melodic Phrases in Notker’s Benedicta es
-
-Related Melodic Phrases in Notker’s Benedicta es.  Modern edition from The CRIM Project (url: https://crimproject.org/pieces/CRIM_Model_0022), based on Boston, Museum of Fine Arts, Ms 80.504, fols. 112v - 113v, a sequentiary compiled at the Convent of St. Louis de Poissy some time during the 14th century.  See https://collections.mfa.org/objects/53348/sequentiary?ctx=0e8a4040-38a6-4ee2-b8ad-24f2a8266df9&idx=67
-
-
-<img src="palestrina_josquin/Ex_01_Notker.svg" alt="Notker Sequence" style="width: 100%; max-width: 800px;">
-
-
----
-
-
-
-### Example 2: Fugas in Mouton's Benedicta es, Phrases 4E/F
+### Example 1:  Fugas in Mouton's Benedicta es, Phrases 4E/F
 
 Fugas and hidden presentation types in Phrases 4E and 4F of Jean Mouton's, *Benedicta es*, mm. 62-7. For a complete edition of the work see url: [CRIM Model 0021](https://crimproject.org/pdf/CRIM_Model_0021.pdf).
 
-<img src="palestrina_josquin/Ex_02_Mouton_4E_F.svg" alt="Mouton Phrase 4A" style="width: 100%; max-width: 800px;">
+<img src="palestrina_josquin/Ex_01_Mouton_4E_F.svg" alt="Mouton Phrase 4A" style="width: 100%; max-width: 800px;">
 
 
 ---
 
 
-### Example 3: Fugas and hidden Imitative Duos in Josquin’s Benedicta es
+### Example 2: Fugas and hidden Imitative Duos in Josquin’s Benedicta es
 
 Fugas and hidden Imitative Duos in Phrases 3E and 3F of Josquin’s *Benedicta es*, mm. 72-79.   There are also two ‘dovetail’ cadences in the passage:  one in measure 73 (where the Sexta vox enters an octave below the C in the Quinta vox) and in measure 75 (where the Bassus enters an octave above the G in the Sexta vox).
 
 
 
-<img src="palestrina_josquin/Ex_03_Josquin_3E_F.svg" alt="Josquin Duos" style="width: 100%; max-width: 800px;">
+<img src="palestrina_josquin/Ex_02_Josquin_3E_F.svg" alt="Josquin Duos" style="width: 100%; max-width: 800px;">
 
 
 
 ---
 
 
-### Example 4: Fugas and hidden presentation types in Josquin’s Benedicta es
+### Example 3: Fugas and hidden presentation types in Josquin’s Benedicta es
 
 Fugas and hidden presentation types in Phrases 4E and 4F of Josquin’s *Benedicta es*, mm. 86-92.  The first entry (in the quinta vox) makes a new dovetail with the cadence to G between the tenor and sexta vox.
 
 
-<img src="palestrina_josquin/Ex_04_Josquin_4E_F.svg" alt="Josquin Phrase 4E/F" style="width: 100%; max-width: 800px;">
+<img src="palestrina_josquin/Ex_03_Josquin_4E_F.svg" alt="Josquin Phrase 4E/F" style="width: 100%; max-width: 800px;">
 
 ---
 
 
-### Example 5:  The Kyrie of Palestrina’s Missa Benedicta es
+### Example 4:  The Kyrie of Palestrina’s Missa Benedicta es
 
 The Kyrie of Palestrina’s Mass, showing the first of over two-dozen statements of the Phrase 3E/F motive from Josquin’s motet.  The dovetail entry around the cadence recalls that found in the motet.  The various interlocks of the soggetto include a recombination of the Periodic Entry found there (same melodic intervals, but in a new order).
 
 
-<img src="palestrina_josquin/Ex_05_Palestrina_3E.svg" alt="Palestrina Fugas" style="width: 100%; max-width: 800px;">
+<img src="palestrina_josquin/Ex_04_Palestrina_3E.svg" alt="Palestrina Fugas" style="width: 100%; max-width: 800px;">
 
 
 ---
 ---
 
 
-### Example 6:  The Kyrie of Morales Missa Benedicta es
+### Example 5:  The Kyrie of Morales Missa Benedicta es
 
 From the Kyrie of Morales’s *Missa Benedicta es*, Imitative duos fashioned from the original Phrase 3E soggetto.  The schema transforms Josquin’s Periodic Entries, and also omits the dovetail cadence.
 
 
-<img src="palestrina_josquin/Ex_05_Palestrina_3E.svg" alt="Palestrina Fugas" style="width: 100%; max-width: 800px;">
+<img src="palestrina_josquin/Ex_05_Morales_Kyrie.svg" alt="<Morales> Fugas" style="width: 100%; max-width: 800px;">
 
 
 ---
 ---
 
 
-### Example 7:  The Kyrie of Hesdin's Missa Benedicta es
+### Example 6:  The Kyrie of Hesdin's Missa Benedicta es
 
 From the Kyrie of Hesdin’s *Missa Benedicta es*, two three-voice fugas fashioned from the Phrase 3E soggetto.  The Schema transforms Josquin’s Periodic Entries, and also omits the dovetail cadence.  There nevertheless is a new dovetail cadence in mm. 71-2, where the Superius and Contratenor enter as the Tenor and Bassus form a cadence to G.
 
 
 
-<img src="palestrina_josquin/Ex_05_Palestrina_3E.svg" alt="Palestrina Fugas" style="width: 100%; max-width: 800px;">
+<img src="palestrina_josquin/Ex_06_Hesdin_Kyrie.svg" alt="HesdinPalestrina Fugas" style="width: 100%; max-width: 800px;">
 
 
 ---
