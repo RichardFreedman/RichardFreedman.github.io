@@ -80,7 +80,7 @@ Weighted note distributions for the chanson (on the left) and then including all
 
 <img src="svg_figures/Tonalities_Fig_5.svg" alt="Comparative Note Distributions in the Chanson and Mass Movements" style="width: 100%; max-width: 800px;">
 
-[**→ View Interactive Version**](html_figures/Tonalities_Fig_5.html)
+[**→ View Interactive Version**](https://richardfreedman.github.io/tonkunst_tonalities/html_figures/Tonalities_Fig_5.html)
 
 *Click the link above to explore the full interactive chart in a new tab.*
 
@@ -95,7 +95,7 @@ Chart showing voice ranges of *Voulant honneur* in comparison with various movem
 
 <img src="svg_figures/Tonalities_Fig_6.svg" alt="Voice Ranges in the Chanson and Mass Movements" style="width: 100%; max-width: 800px;">
 
-[**→ View Interactive Version**](html_figures/Tonalities_Fig_6.html)
+[**→ View Interactive Version**](https://richardfreedman.github.io/tonkunst_tonalities/html_figures/Tonalities_Fig_6.html)
 
 *Click the link above to explore the full interactive chart in a new tab.*
 
@@ -122,9 +122,9 @@ Comparing the Progress of Cadences in the Chanson and the Kyrie. The left edge o
 
 <img src="svg_figures/Tonalities_Fig_8.svg" alt="Comparing the Progress of Cadences" style="width: 100%; max-width: 800px;">
 
-[**→ View Interactive  Version of Chanson Progress Plot**](html_figures/Tonalities_Fig_8a.html)
+[**→ View Interactive  Version of Chanson Progress Plot**](https://richardfreedman.github.io/tonkunst_tonalities/html_figures/Tonalities_Fig_8a.html)
 
-[**→ View Interactive Version of Kyrie Progress Plot**](html_figures/Tonalities_Fig_8b.html)
+[**→ View Interactive Version of Kyrie Progress Plot**](https://richardfreedman.github.io/tonkunst_tonalities/html_figures/Tonalities_Fig_8b.html)
 
 *Click the link above to explore the full interactive charts in new tabs.*
 
@@ -137,7 +137,7 @@ Comparative Distribution of Cadence Tones and Types across the Corpus.  In the u
 
 <img src="svg_figures/Tonalities_Fig_9.svg" alt="Comparative Distribution of Cadence Tones and Types" style="width: 100%; max-width: 800px;">
 
-[**→ View Interactive Version of Kyrie Progress Plot**](html_figures/Tonalities_Fig_9.html)
+[**→ View Interactive Version of Kyrie Progress Plot**](https://richardfreedman.github.io/tonkunst_tonalities/html_figures/Tonalities_Fig_9.html)
 
 ---
 
