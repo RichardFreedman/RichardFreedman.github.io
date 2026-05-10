@@ -4,7 +4,7 @@
 
 ## Richard Freedman (Haverford College, USA)
 
-This repository contains musical examples and visualizations that accompany the book "Echoes of Josquin: Palestrina's Missa Benedicta es and the Digital Ear" by Richard Freedman. Many of them are interactive, and produced with [CRIM Intervals tools](https://github.com/HCDigitalScholarship/intervals), a software package developed by the author. 
+This repository contains musical examples and visualizations that accompany the "Echoes of Josquin: Palestrina's Missa Benedicta es and the Digital Ear" by Richard Freedman, published [*Die Tonkunst* 19/4 (2025)](https://www.die-tonkunst.de/index.php?cID=859). Many of them are interactive, and produced with [CRIM Intervals tools](https://github.com/HCDigitalScholarship/intervals), a software package developed by the author. 
 
 <!--
  Test 1: Root relative 
