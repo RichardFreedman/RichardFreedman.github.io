@@ -1,10 +1,12 @@
 
 
-## Musical Examples and Visualizations to Accompany "Echoes of Josquin:  Palestrina's Missa Benedicta es and the Digital Ear"
+## Musical Examples and Visualizations to Accompany "Digital Tonalities:  Exploring The Sounds of the Renaissance Music through the Imitation Mass"
+
 
 ## Richard Freedman (Haverford College, USA)
 
-This repository contains musical examples and visualizations that accompany the book "Echoes of Josquin: Palestrina's Missa Benedicta es and the Digital Ear" by Richard Freedman. Many of them are interactive, and produced with [CRIM Intervals tools](https://github.com/HCDigitalScholarship/intervals), a software package developed by the author. 
+This repository contains musical examples and visualizations that accompany "Digital Tonalities:  
+Exploring The Sounds of the Renaissance Music through the Imitation Mass", published in *Die Tonkunst*, 20 (2026). Many of them are interactive, and produced with [CRIM Intervals tools](https://github.com/HCDigitalScholarship/intervals), a software package developed by the author. 
 
 <!--
  Test 1: Root relative 
@@ -27,56 +29,58 @@ SVG model
 -->
 ## Figures 
 
-### Figure 1.  Santa María’s Fugas
+### Figure 1.  The Title Page of Claudin’s **Missa Voulant honneur** (Paris, 1556)
 
-How to create fugas at different pitch and time intervals, from Tomás de Santa María, *Arte de tañer fantasía* (Valladolid, 1565), II, fol 65r-v (Book 2, Chapter 33).
-
-<img src="palestrina_josquin/F_01_SantaMaria_Fugas.svg" alt="Santa Maria" style="width: 100%; max-width: 800px;">
-
----
+The title page of Claudin’s *Missa Voulant honneur* (Paris, 1556).  For a complete digital facsimile, see URL:  https://gallica.bnf.fr/ark:/12148/btv1b55008888c.  The central engraving was reused in each of the other volumes from the series, and in a set of Magnificats published by Du Chemin.
 
 
-### Figure 2.  Schubert’s Presentation Types
-
-Schubert’s Presentation Types in Graphical-Schematic Form.  Matching black traces are meant to suggest matching soggetti.  The small boxes around the graphical patterns are meant to represent repeating harmonic modules.
-
-
-<img src="palestrina_josquin/F_02_Presentation_Types.svg" alt="Presentation Types" style="width: 100%; max-width: 800px;">
-
+<img src="svg_figures/Tonalities_Fig_1.svg" alt="Mass Title Page" style="width: 100%; max-width: 800px;">
 
 ---
 
 
-### Figure 3.  Phrase 3E in graphical notation and as tabular data in CRIM Intervals
+### Figure 2.  The Eight Tons According to Michel de Menehou
 
-Phrase 3E in graphical notation and as tabular data in CRIM Intervals.  Horizontal staves are transformed as vertical columns. This table shows only pitch information, but all music features (durations, lyrics, intervals, patterns of intervals) can be transformed in this way, and combined for sophisticated analysis.
+The Eight Tons According to Michel de Menehou, from the *Nouvelle instruction familiere* of 1558, chapters 14 and 15.  The small letters a, b, c, and d refer back to prose explanations in the body of the treatise, which explain the relationships among the finals, ranges, and »dominantes« for each example, as summarized here.
 
-<img src="palestrina_josquin/F_03_CRIM_Notes.svg" alt="CRIM Notes" style="width: 100%; max-width: 800px;">
+
+<img src="svg_figures/Tonalities_Fig_2.svg" alt="Eight Tons in Notation" style="width: 100%; max-width: 800px;">
 
 
 ---
 
 
-### Figure 4.  CRIM nGrams
+### Figure 3.  Three Representations of the First Phrase of the Tenor of the Kyrie Movement of Claudin de Sermisy's **Missa Voulant honneur**
 
-Two instances of Phrase 3E of Josquin’s motet, as ‘nGrams’ of melodic intervals.  The temporal distances between successive entries can be calculated via the “offset’ column which provides a mathematical index of the position of each event in each piece.
+Three representations of the first phrase of the Tenor of the Kyrie movement of Claudin’s *Missa Voulant honneur*:  The original source, a modern transcription, and a portion of the XML (Music Encoding Initiative format) encoding.  For the complete MEI file, see: https://crimproject.org/mei/CRIM_Model_0012.mei.  
 
 
-<img src="palestrina_josquin/F_04_CRIM_Ngrams.svg" alt="CRIM nGrams" style="width: 100%; max-width: 800px;">
+<img src="svg_figures/Tonalities_Fig_3.svg" alt="original source, modern transcription, MEI encoding" style="width: 100%; max-width: 800px;">
+
+
+---
+
+
+### Figure 4.  Claudin's Kyrie:  Table of Notes by Durational Weight
+
+Table of notes by durational weight, derived from table of notes and table of durations in the Kyrie of Sermisy's Mass.
+
+
+<img src="svg_figures/Tonalities_Fig_4.svg" alt="Notes, Durations and Durational Weights in the Kyrie" style="width: 100%; max-width: 800px;">
 
 
 ---
 
 
 
-### Figure 5.  Shared melodic nGrams in Josquin’s motet and Palestrina’s Kyrie
+### Figure 5.  Weighted Note Distributions for Sandrin's chanson and the Mass Movements by Sermisy Based on It
 
-<img src="palestrina_josquin/F_05_Josquin_Palestrina_Heatmap.svg" alt="Shared Ngrams" style="width: 100%; max-width: 800px;">
+Weighted note distributions for the chanson (on the left) and then including all the Mass movements (on the right).  The pieces are nearly identical. 
 
 
-Shared melodic nGrams (diatonic, length of 4 intervals) in Josquin’s motet and Palestrina’s Kyrie; matching colors indicate matching nGrams. The marked sections show concentrations of closely repeated entries of Phrase 3E/F and 4E/F motives, along with an example of a what Milsom terms a ‘singleton’ (statement without interlock).  
+<img src="svg_figures/Tonalities_Fig_5.svg" alt="Comparative Note Distributions in the Chanson and Mass Movements" style="width: 100%; max-width: 800px;">
 
-[**→ View Interactive Version**](https://richardfreedman.github.io/palestrina_josquin/josquin_palestrina_kyrie_comparison.html)
+[**→ View Interactive Version**](html_figures/Tonalities_Fig_5.html)
 
 *Click the link above to explore the full interactive chart in a new tab.*
 
@@ -85,99 +89,73 @@ Shared melodic nGrams (diatonic, length of 4 intervals) in Josquin’s motet and
 
 
 
-### Figure 6.  Sample Data for Fuga Pair
+### Figure 6.  Voice Ranges in the Chanson and Mass Movements
 
-CRIM Intervals assembles details about each pair of entries of the given fuga soggetto, recording information about the time and pitch distances between entries and the harmonic nGrams they form through their interlock.
+Chart showing voice ranges of *Voulant honneur* in comparison with various movements of Sermisy’s Mass.  The voices are numbered from V1 (highest in score) to V4 (or V5 in the case of the Agnus dei; lowest in the score).  Adjacent voice parts occupy complementary authentic or plagal ranges for the given final. 
 
-<img src="palestrina_josquin/F_06_Josquin_Fuga_Sample.svg" alt="Fuga Data Sample" style="width: 100%; max-width: 800px;">
+<img src="svg_figures/Tonalities_Fig_6.svg" alt="Voice Ranges in the Chanson and Mass Movements" style="width: 100%; max-width: 800px;">
 
-
----
-
-
-
-### Figure 7. Flowchart of Two-Voice Fugas, Interlocks and nGrams
-
-Contrapuntal Pathways for Strict 2-Voice Fugas built from Phrase 3E soggetto, by composer, melodic intervals between entries, time intervals between entries, and harmonic nGrams formed by interlocks. 
-
-
-<img src="palestrina_josquin/F_07_Fuga_flowchart.svg" alt="Fuga Scatterplot" style="width: 100%; max-width: 800px;">
-
-
-[**→ View Interactive Version**](https://richardfreedman.github.io/palestrina_josquin/josquin_palestrina_phrase_3E_sankey_flow.html)
-
+[**→ View Interactive Version**](html_figures/Tonalities_Fig_6.html)
 
 *Click the link above to explore the full interactive chart in a new tab.*
 
----
-
-
-### Musical Examples
-
-### Example 1:  Fugas in Mouton's Benedicta es, Phrases 4E/F
-
-Fugas and hidden presentation types in Phrases 4E and 4F of Jean Mouton's, *Benedicta es*, mm. 62-7. For a complete edition of the work see url: [CRIM Model 0021](https://crimproject.org/pdf/CRIM_Model_0021.pdf).
-
-<img src="palestrina_josquin/Ex_01_Mouton_4E_F.svg" alt="Mouton Phrase 4A" style="width: 100%; max-width: 800px;">
-
 
 ---
 
 
-### Example 2: Fugas and hidden Imitative Duos in Josquin’s Benedicta es
 
-Fugas and hidden Imitative Duos in Phrases 3E and 3F of Josquin’s *Benedicta es*, mm. 72-79.   There are also two ‘dovetail’ cadences in the passage:  one in measure 73 (where the Sexta vox enters an octave below the C in the Quinta vox) and in measure 75 (where the Bassus enters an octave above the G in the Sexta vox).
-
+### Figure 7.  Contrapuntal Ngrams as Classified Cadences
 
 
-<img src="palestrina_josquin/Ex_02_Josquin_3E_F.svg" alt="Josquin Duos" style="width: 100%; max-width: 800px;">
+Contrapuntal Ngrams as Classified Cadences.  Authentic cadence to G correctly identified, including voice roles for each voice in the score, from top to bottom.
 
+
+
+
+<img src="svg_figures/Tonalities_Fig_7.svg" alt="Contrapuntal Ngrams as Classified Cadences" style="width: 100%; max-width: 800px;">
+
+---
+
+### Figure 8.  Comparing the Progress of Cadences in the Chanson and the Kyrie
+
+Comparing the Progress of Cadences in the Chanson and the Kyrie. The left edge of each chart represents the start of each composition; the right edge is the end.  Created with CRIM Intervals.
+
+<img src="svg_figures/Tonalities_Fig_8.svg" alt="Comparing the Progress of Cadences" style="width: 100%; max-width: 800px;">
+
+[**→ View Interactive  Version of Chanson Progress Plot**](html_figures/Tonalities_Fig_8a.html)
+
+[**→ View Interactive Version of Kyrie Progress Plot**](html_figures/Tonalities_Fig_8b.html)
+
+*Click the link above to explore the full interactive charts in new tabs.*
 
 
 ---
 
+### Figure 9.  Comparative Distribution of Cadence Tones and Types across the Corpus
 
-### Example 3: Fugas and hidden presentation types in Josquin’s Benedicta es
+Comparative Distribution of Cadence Tones and Types across the Corpus.  In the upper chart, the size of the circle corresponds to the percentage of cadences with the given final tone in each piece.  In each chart we see how the Credo, Gloria, and Sanctus movements in particular diverge from the narrow distribution heard in the chanson and Kyrie.
 
-Fugas and hidden presentation types in Phrases 4E and 4F of Josquin’s *Benedicta es*, mm. 86-92.  The first entry (in the quinta vox) makes a new dovetail with the cadence to G between the tenor and sexta vox.
+<img src="svg_figures/Tonalities_Fig_9.svg" alt="Comparative Distribution of Cadence Tones and Types" style="width: 100%; max-width: 800px;">
+
+[**→ View Interactive Version of Kyrie Progress Plot**](html_figures/Tonalities_Fig_9.html)
+
+---
 
 
-<img src="palestrina_josquin/Ex_03_Josquin_4E_F.svg" alt="Josquin Phrase 4E/F" style="width: 100%; max-width: 800px;">
+## Musical Examples
+
+### Example 1:  Four different cadence types in the opening two phrase of Sandrin’s chanson
+
+Four different cadence types in the opening two phrase of Sandrin’s chanson.
+
+<img src="svg_figures/Tonalities_Ex_1.svg" alt="Sandrin Chanson Cadences" style="width: 100%; max-width: 800px;">
 
 ---
 
+### Example 2.  Two cadences in the B phrase of Sandrin’s chanson
 
-### Example 4:  The Kyrie of Palestrina’s Missa Benedicta es
+Two cadences in the B phrase of Sandrin’s chanson
 
-The Kyrie of Palestrina’s Mass, showing the first of over two-dozen statements of the Phrase 3E/F motive from Josquin’s motet.  The dovetail entry around the cadence recalls that found in the motet.  The various interlocks of the soggetto include a recombination of the Periodic Entry found there (same melodic intervals, but in a new order).
-
-
-<img src="palestrina_josquin/Ex_04_Palestrina_3E.svg" alt="Palestrina Fugas" style="width: 100%; max-width: 800px;">
+<img src="svg_figures/Tonalities_Ex_2.svg" alt="Sandrin B-phrase Cadences" style="width: 100%; max-width: 800px;">
 
 
----
----
-
-
-### Example 5:  The Kyrie of Morales Missa Benedicta es
-
-From the Kyrie of Morales’s *Missa Benedicta es*, Imitative duos fashioned from the original Phrase 3E soggetto.  The schema transforms Josquin’s Periodic Entries, and also omits the dovetail cadence.
-
-
-<img src="palestrina_josquin/Ex_05_Morales_Kyrie.svg" alt="<Morales> Fugas" style="width: 100%; max-width: 800px;">
-
-
----
----
-
-
-### Example 6:  The Kyrie of Hesdin's Missa Benedicta es
-
-From the Kyrie of Hesdin’s *Missa Benedicta es*, two three-voice fugas fashioned from the Phrase 3E soggetto.  The Schema transforms Josquin’s Periodic Entries, and also omits the dovetail cadence.  There nevertheless is a new dovetail cadence in mm. 71-2, where the Superius and Contratenor enter as the Tenor and Bassus form a cadence to G.
-
-
-
-<img src="palestrina_josquin/Ex_06_Hesdin_Kyrie.svg" alt="HesdinPalestrina Fugas" style="width: 100%; max-width: 800px;">
-
-
----
