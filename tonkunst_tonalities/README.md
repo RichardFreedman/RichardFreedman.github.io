@@ -86,9 +86,6 @@ Weighted note distributions for the chanson (on the left) and then including all
 
 ---
 
-
-
-
 ### Figure 6.  Voice Ranges in the Chanson and Mass Movements
 
 Chart showing voice ranges of *Voulant honneur* in comparison with various movements of Sermisy’s Mass.  The voices are numbered from V1 (highest in score) to V4 (or V5 in the case of the Agnus dei; lowest in the score).  Adjacent voice parts occupy complementary authentic or plagal ranges for the given final. 
@@ -108,8 +105,6 @@ Chart showing voice ranges of *Voulant honneur* in comparison with various movem
 
 
 Contrapuntal Ngrams as Classified Cadences.  Authentic cadence to G correctly identified, including voice roles for each voice in the score, from top to bottom.
-
-
 
 
 <img src="svg_figures/Tonalities_Fig_7.svg" alt="Contrapuntal Ngrams as Classified Cadences" style="width: 100%; max-width: 800px;">
