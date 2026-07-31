@@ -5,7 +5,7 @@
 
 ## Marcel Klinke (University of Heidelberg) and Richard Freedman (Haverford College)
 
-This repository contains the musical examples and visualizations that accompany the article "Lasso takes a Second Look An Imitation of an Imitation Mass?" by Marcel Klinke and Richard Freedman, published in *Early Music*. Many of them are interactive, and produced with [CRIM Intervals tools](https://github.com/HCDigitalScholarship/intervals), a software package developed by The CRIM Project Technical Team. 
+This repository contains the musical examples and visualizations that accompany the article "Lasso takes a Second Look:  An Imitation of an Imitation Mass?" by Marcel Klinke and Richard Freedman, published in *Early Music*. Many of them are interactive, and produced with [CRIM Intervals tools](https://github.com/HCDigitalScholarship/intervals), a software package developed by The CRIM Project Technical Team. 
 
 <!--
  Test 1: Root relative 
