@@ -1,6 +1,6 @@
 
 
-## “Lasso takes a Second Look An Imitation of an Imitation Mass?”
+## “Lasso takes a Second Look: An Imitation of an Imitation Mass?”
 
 
 ## Marcel Klinke (University of Heidelberg) and Richard Freedman (Haverford College)
