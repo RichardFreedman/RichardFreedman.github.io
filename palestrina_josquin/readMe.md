@@ -6,6 +6,36 @@
 
 This repository contains musical examples and visualizations that accompany the "Echoes of Josquin: Palestrina's Missa Benedicta es and the Digital Ear" by Richard Freedman, published [*Die Tonkunst* 19/4 (2025)](https://www.die-tonkunst.de/index.php?cID=859). Many of them are interactive, and produced with [CRIM Intervals tools](https://github.com/HCDigitalScholarship/intervals), a software package developed by the author. 
 
+## Guide to Interactive HTML Files
+
+This folder includes several standalone interactive visualizations, each linked from the corresponding figure below and also listed here for quick reference.
+
+### Corpus Note Plot (Kyries)
+
+[View live page](https://richardfreedman.github.io/palestrina_josquin/Corpus_Note_Plot_Kyries.html)
+
+
+
+### Josquin Benedicta es nGrams Visualization
+
+[View live page](https://richardfreedman.github.io/palestrina_josquin/josquin_benedicta_ngrams_visualization.html)
+
+
+
+### Josquin/Palestrina Kyrie Comparison (Figure 5)
+
+[View live page](https://richardfreedman.github.io/palestrina_josquin/josquin_palestrina_kyrie_comparison.html)
+
+
+
+### Josquin/Palestrina Phrase 3E Sankey Flow (Figure 7)
+
+[View live page](https://richardfreedman.github.io/palestrina_josquin/josquin_palestrina_phrase_3E_sankey_flow.html)
+
+
+
+---
+
 <!--
  Test 1: Root relative 
 [Test 1](./josquin_benedicta_ngrams_visualization.html)
